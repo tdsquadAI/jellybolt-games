@@ -1,33 +1,34 @@
 # ⚡ JellyBolt Games
 
-> **Fun, Free, Fair games for kids & teens.**
+> **Fun, Free, Fair games — play instantly in your browser!**
 
-JellyBolt Games is an indie mobile game studio focused on creating **free-to-play Android games** that are safe, fun, and fair for young players. We believe great games don't need gambling, pay-to-win mechanics, or shady monetization.
+JellyBolt Games is an indie game studio focused on creating **free-to-play browser games** that are fun, polished, and instantly playable. No downloads, no installs — just click and play.
+
+🎮 **Play all our games:** [jellyboltgames.itch.io](https://jellyboltgames.itch.io)
 
 ---
 
 ## 🎮 Game Portfolio
 
-| Game | Genre | Status | Repo |
-|------|-------|--------|------|
-| **BrainRot Quiz Battle** | Multiplayer Trivia | 🟡 In Development | [brainrot-quiz-battle](https://github.com/tamirdresher/brainrot-quiz-battle) |
-| **Bounce Blitz** | One-Tap Arcade | 🔵 Design Phase | [bounce-blitz](https://github.com/tamirdresher/bounce-blitz) |
-| **Idle Critter Farm** | Idle / Merge | 🔵 Design Phase | [idle-critter-farm](https://github.com/tamirdresher/idle-critter-farm) |
-| **Code Conquest** | Strategy Board Game | 🟡 In Development | [code-conquest](https://github.com/tamirdresher/code-conquest) |
+| Game | Genre | Play Now | Status |
+|------|-------|----------|--------|
+| **🧠 BrainRot Quiz Battle** | Trivia / Quiz | [▶ Play](https://jellyboltgames.itch.io/brainrot-quiz-battle) | ✅ Published |
+| **⚔️ Code Conquest** | Strategy / Board | [▶ Play](https://jellyboltgames.itch.io/code-conquest) | ✅ Published |
+| **🟢 Bounce Blitz** | One-Tap Arcade | [▶ Play](https://jellyboltgames.itch.io/bounce-blitz) | ✅ Published |
+| **🐍 Neon Snake** | Arcade / Classic | [▶ Play](https://jellyboltgames.itch.io/neon-snake) | ✅ Published |
+| **🚀 Asteroid Dash** | Space Shooter | [▶ Play](https://jellyboltgames.itch.io/asteroid-dash) | ✅ Published |
 
 ---
 
 ## 🎯 Mission
 
-**"Make games kids love — without tricks, traps, or paywalls."**
+**"Make games everyone loves — no tricks, no paywalls, just fun."**
 
-- ✅ **Free to download and play** — no purchase required
-- ✅ **Cosmetics-only monetization** — skins, themes, emotes (no gameplay advantage)
-- ✅ **Battle passes** — optional premium content seasons
-- ✅ **No gambling** — no loot boxes with real money, no slot mechanics
-- ✅ **No pay-to-win** — skill and fun always come first
-- ✅ **Privacy-first** — COPPA-aware, minimal data collection
-- ✅ **No trademarked/copyrighted content** — 100% original IP
+- ✅ **Free to play** — no purchase required
+- ✅ **Play instantly** — HTML5 browser games, works on mobile & desktop
+- ✅ **No gambling** — no loot boxes, no slot mechanics
+- ✅ **Privacy-first** — minimal data collection
+- ✅ **Original content only** — 100% original IP
 
 ---
 
@@ -35,14 +36,11 @@ JellyBolt Games is an indie mobile game studio focused on creating **free-to-pla
 
 | Layer | Technology |
 |-------|-----------|
-| **Mobile App** | React Native + Expo (Android) |
-| **Game Engine** | React Native Game Engine / Custom Canvas |
-| **Backend** | Supabase (Auth, DB, Realtime, Edge Functions) |
-| **Billing** | RevenueCat + Google Play Billing |
-| **Analytics** | Firebase Analytics + Crashlytics |
-| **Remote Config** | Firebase Remote Config (A/B testing) |
-| **CI/CD** | GitHub Actions → EAS Build → Play Store |
-| **Store** | Google Play Store (Android only) |
+| **Games** | HTML5 Canvas + Vanilla JavaScript |
+| **Platform** | itch.io (browser play) |
+| **Hosting** | itch.io CDN |
+| **Source Control** | GitHub |
+| **CI/CD** | GitHub Actions |
 
 ---
 
@@ -50,64 +48,47 @@ JellyBolt Games is an indie mobile game studio focused on creating **free-to-pla
 
 - **Name:** JellyBolt Games
 - **Tagline:** "Fun hits different ⚡"
-- **Logo Concept:** A bouncy jelly blob with a lightning bolt through it, bright neon colors (electric blue + lime green)
-- **Target Audience:** Kids 8-16, teens, casual gamers
-- **Markets:** Israel (Hebrew + English), Global (English)
-
----
-
-## 📊 Revenue Model
-
-See [REVENUE_STRATEGY.md](./REVENUE_STRATEGY.md) for full details.
-
-**TL;DR:**
-- Games are **100% free** to download
-- Revenue from **cosmetics**, **battle passes**, and **optional rewarded ads**
-- Google Play takes 15% (first $1M/year), then 30%
-- RevenueCat handles billing infrastructure
-- Target: $5K-$50K MRR per game at scale
-
----
-
-## 🏗 How to Contribute
-
-This is a **Squad-powered** studio. Each game has its own Squad team. See `.squad/` for team configuration.
-
-1. Check the [Studio Board](https://github.com/users/tamirdresher/projects/) for open tasks
-2. Pick an issue labeled `good-first-issue` or your specialty
-3. Create a branch: `squad/{issue-number}-description`
-4. Submit a PR, get review, ship it
-
----
-
-## ⚖️ Legal & Ethics
-
-- **Business Entity:** Registered עוסק מורשה (Israeli sole proprietorship)
-- **No gambling:** Zero real-money randomized rewards
-- **COPPA-aware:** Minimal data collection for users under 13
-- **Privacy Policy:** Published per-game on Play Store
-- **Terms of Service:** Clear, fair, readable
-- **Original content only:** No trademarked characters, no copyrighted material
-- **All games rated E / Everyone** on Google Play
+- **Logo Concept:** A bouncy jelly blob with a lightning bolt, neon colors (electric blue + lime green)
+- **Target Audience:** Everyone — casual gamers, students, anyone with a browser
+- **Distribution:** [itch.io](https://jellyboltgames.itch.io)
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-jellybolt-games/          # Studio HQ (this repo)
-├── .squad/               # Squad team configuration
-├── REVENUE_STRATEGY.md   # Monetization strategy
-├── ralph-watch.ps1       # Autonomous monitoring
-├── docs/                 # Studio docs, legal templates
-└── README.md             # You are here
-
-brainrot-quiz-battle/     # Game 1 — Multiplayer trivia
-bounce-blitz/             # Game 2 — One-tap arcade
-idle-critter-farm/        # Game 3 — Idle merge game
-code-conquest/            # Game 4 — Strategy board game
+jellybolt-games/                # Studio HQ (this repo)
+├── games/
+│   ├── brainrot-quiz-battle/   # 🧠 Trivia quiz game
+│   ├── code-conquest/          # ⚔️ Strategy board game
+│   ├── bounce-blitz/           # 🟢 One-tap arcade game
+│   ├── neon-snake/             # 🐍 Neon snake game
+│   └── asteroid-dash/          # 🚀 Space shooter
+├── store-listings/             # itch.io & store metadata
+├── docs/                       # Studio docs
+├── .squad/                     # Team configuration
+└── README.md                   # You are here
 ```
 
 ---
 
-<sub>⚡ Built with love by JellyBolt Games • Powered by Squad AI</sub>
+## 🎮 Game Descriptions
+
+### 🧠 BrainRot Quiz Battle
+Test your knowledge across 6 categories: Memes, Tech, Science, Gaming, Internet, and Mixed. Timed questions, streak bonuses, and a ranking system from "Maximum Brainrot" to "Quiz Master."
+
+### ⚔️ Code Conquest
+Conquer the digital grid! A turn-based strategy game where you expand territory, fortify defenses, and strike enemies. Features an AI opponent with adaptive tactics.
+
+### 🟢 Bounce Blitz
+Tap to bounce through neon gaps! A hypercasual arcade game with procedural obstacles, increasing speed, particle effects, and 5 ball skins. How far can you go?
+
+### 🐍 Neon Snake
+The classic snake game reimagined with rainbow neon aesthetics, pulsing special food, accelerating difficulty, and touch/swipe support for mobile play.
+
+### 🚀 Asteroid Dash
+Navigate through an asteroid field, shoot to survive! Features power-ups (shields, rapid fire, extra lives), progressive difficulty with levels, and a satisfying explosion system.
+
+---
+
+<sub>⚡ Built with love by JellyBolt Games</sub>
