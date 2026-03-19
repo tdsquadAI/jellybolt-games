@@ -26,6 +26,8 @@ JellyBolt Games is an indie game studio focused on creating **free-to-play brows
 | **🃏 Card Clash** | Card Battle | [▶ Play](https://jellyboltgames.itch.io/card-clash) | ✅ Published |
 | **💡 Light Trail** | Tron Arena | [▶ Play](https://jellyboltgames.itch.io/light-trail) | ✅ Published |
 | **⚡ Dungeon Bolt** | Roguelite RPG | [▶ Play](https://jellyboltgames.itch.io/dungeon-bolt) | ✅ $2.99 Flagship |
+| **🏏 Bolt Breaker** | Breakout | [▶ Play](https://jellyboltgames.itch.io/bolt-breaker) | ✅ Published |
+| **🚀 Space Trader** | Trading Sim | [▶ Play](https://jellyboltgames.itch.io/space-trader) | ✅ Published |
 
 ---
 
@@ -81,7 +83,9 @@ jellybolt-games/                # Studio HQ (this repo)
 │   ├── gravity-dash/           # 🔄 Gravity-flipping platformer
 │   ├── card-clash/             # 🃏 Card battle vs AI
 │   ├── light-trail/            # 💡 Tron-style arena game
-│   └── dungeon-bolt/           # ⚡ Roguelite dungeon crawler (flagship)
+│   ├── dungeon-bolt/           # ⚡ Roguelite dungeon crawler (flagship)
+│   ├── bolt-breaker/           # 🏏 Breakout with 10 neon levels
+│   └── space-trader/           # 🚀 Interstellar trading sim
 ├── store-listings/             # itch.io & store metadata
 ├── docs/                       # Studio docs
 ├── .squad/                     # Team configuration
@@ -133,6 +137,14 @@ Tron-inspired arena survival. Steer your light bike with arrow keys or swipe, le
 
 ### ⚡ Dungeon Bolt *(Flagship — $2.99)*
 JellyBolt's premium roguelite dungeon crawler. Descend 5 floors of procedurally generated rooms — fight 11 enemy types, collect loot from treasure rooms, rest at campfires, buy gear from merchants. Each run is unique. Permadeath means every decision matters.
+
+### 🏏 Bolt Breaker
+Classic Breakout reimagined with neon visuals, 10 hand-crafted levels, and 5 powerup types (wide paddle, mega ball, extra life, speed boost, sticky ball). Bricks take 1-3 hits with satisfying particle effects.
+
+### 🚀 Space Trader
+Buy low, sell high across 6 star systems. Each system specializes in different goods. Random events (pirates, derelicts, market crashes) keep every run unpredictable. 30 turns to amass the biggest fortune you can.
+
+For the full catalog with pricing details, see [GAMES_CATALOG.md](./GAMES_CATALOG.md).
 
 ---
 
