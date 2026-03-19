@@ -17,6 +17,9 @@ JellyBolt Games is an indie game studio focused on creating **free-to-play brows
 | **🟢 Bounce Blitz** | One-Tap Arcade | [▶ Play](https://jellyboltgames.itch.io/bounce-blitz) | ✅ Published |
 | **🐍 Neon Snake** | Arcade / Classic | [▶ Play](https://jellyboltgames.itch.io/neon-snake) | ✅ Published |
 | **🚀 Asteroid Dash** | Space Shooter | [▶ Play](https://jellyboltgames.itch.io/asteroid-dash) | ✅ Published |
+| **🧩 Memory Matrix** | Pattern Memory | [▶ Play](https://jellyboltgames.itch.io/memory-matrix) | ✅ Published |
+| **🏗️ Pixel Tower** | Tower Stacking | [▶ Play](https://jellyboltgames.itch.io/pixel-tower) | ✅ Published |
+| **⌨️ Word Rush** | Typing / Speed | [▶ Play](https://jellyboltgames.itch.io/word-rush) | ✅ Published |
 
 ---
 
@@ -63,7 +66,10 @@ jellybolt-games/                # Studio HQ (this repo)
 │   ├── code-conquest/          # ⚔️ Strategy board game
 │   ├── bounce-blitz/           # 🟢 One-tap arcade game
 │   ├── neon-snake/             # 🐍 Neon snake game
-│   └── asteroid-dash/          # 🚀 Space shooter
+│   ├── asteroid-dash/          # 🚀 Space shooter
+│   ├── memory-matrix/          # 🧩 Pattern memory game
+│   ├── pixel-tower/            # 🏗️ Tower stacking game
+│   └── word-rush/              # ⌨️ Typing speed game
 ├── store-listings/             # itch.io & store metadata
 ├── docs/                       # Studio docs
 ├── .squad/                     # Team configuration
@@ -88,6 +94,15 @@ The classic snake game reimagined with rainbow neon aesthetics, pulsing special 
 
 ### 🚀 Asteroid Dash
 Navigate through an asteroid field, shoot to survive! Features power-ups (shields, rapid fire, extra lives), progressive difficulty with levels, and a satisfying explosion system.
+
+### 🧩 Memory Matrix
+Watch tiles light up in a pattern, then repeat the sequence from memory. Grid grows from 3x3 to 6x6 as you progress. Each level adds more tiles to memorize — how far can your brain go?
+
+### 🏗️ Pixel Tower
+Stack blocks to build the tallest tower! Blocks slide back and forth — tap at the right moment to drop them. Perfect placement earns combo bonuses. Miss and the tower crumbles.
+
+### ⌨️ Word Rush
+Words fall from the sky — type them before they reach the bottom! Starts easy with short words, escalates to longer ones. Tracks your WPM and awards ranks from "Hunt & Peck" to "Keyboard Legend."
 
 ---
 
