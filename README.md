@@ -20,6 +20,9 @@ JellyBolt Games is an indie game studio focused on creating **free-to-play brows
 | **🧩 Memory Matrix** | Pattern Memory | [▶ Play](https://jellyboltgames.itch.io/memory-matrix) | ✅ Published |
 | **🏗️ Pixel Tower** | Tower Stacking | [▶ Play](https://jellyboltgames.itch.io/pixel-tower) | ✅ Published |
 | **⌨️ Word Rush** | Typing / Speed | [▶ Play](https://jellyboltgames.itch.io/word-rush) | ✅ Published |
+| **🔷 Hex Match** | Hex Puzzle | [▶ Play](https://jellyboltgames.itch.io/hex-match) | ✅ Published |
+| **🎵 Rhythm Tap** | Rhythm / Music | [▶ Play](https://jellyboltgames.itch.io/rhythm-tap) | ✅ Published |
+| **🔄 Gravity Dash** | Platformer | [▶ Play](https://jellyboltgames.itch.io/gravity-dash) | ✅ Published |
 
 ---
 
@@ -69,7 +72,10 @@ jellybolt-games/                # Studio HQ (this repo)
 │   ├── asteroid-dash/          # 🚀 Space shooter
 │   ├── memory-matrix/          # 🧩 Pattern memory game
 │   ├── pixel-tower/            # 🏗️ Tower stacking game
-│   └── word-rush/              # ⌨️ Typing speed game
+│   ├── word-rush/              # ⌨️ Typing speed game
+│   ├── hex-match/              # 🔷 Hex tile matching puzzle
+│   ├── rhythm-tap/             # 🎵 4-lane rhythm game
+│   └── gravity-dash/           # 🔄 Gravity-flipping platformer
 ├── store-listings/             # itch.io & store metadata
 ├── docs/                       # Studio docs
 ├── .squad/                     # Team configuration
@@ -103,6 +109,15 @@ Stack blocks to build the tallest tower! Blocks slide back and forth — tap at 
 
 ### ⌨️ Word Rush
 Words fall from the sky — type them before they reach the bottom! Starts easy with short words, escalates to longer ones. Tracks your WPM and awards ranks from "Hunt & Peck" to "Keyboard Legend."
+
+### 🔷 Hex Match
+Swap adjacent hexagonal tiles to match 3+ of the same color. Features chain reactions, combo multipliers, and a 30-move limit per round. Strategic and satisfying.
+
+### 🎵 Rhythm Tap
+Notes fall across 4 lanes — hit them in time with D-F-J-K keys or tap the lanes on mobile. 60-second rounds with increasing BPM, Perfect/Great/Good ratings, and combo multipliers.
+
+### 🔄 Gravity Dash
+Run through a side-scrolling obstacle course and flip gravity with one tap! Dodge spikes, moving platforms, and walls while collecting stars. Speed increases over time.
 
 ---
 
