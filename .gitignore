@@ -2,3 +2,7 @@
 # Build artifacts
 *.zip
 
+
+# Local credentials
+.env
+.env.*
