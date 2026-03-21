@@ -1,111 +1,99 @@
 # JellyBolt Games — Project Status
-Last updated: 2026-03-20
+Last updated: 2026-03-21
 
 ## Brand Identity
 - **Name:** JellyBolt Games (JellyBolt⚡)
 - **NEVER mention "Tamir Dresher"** — independent brand
-- **Landing page:** `index.html` (230-line responsive page with game grid)
-- **itch.io:** jellybolt.itch.io
+- **Landing page:** `index.html` — 24-game responsive site with affiliate gear section
+- **GitHub Pages:** https://jellybolt-games.github.io/jellybolt-games/
+- **itch.io:** jellyboltgames.itch.io
+- **YouTube:** https://www.youtube.com/channel/UC0roFVTTy1nSW9Zc7DgcsmQ (12 videos)
 - **Contact:** tdsquadai@gmail.com
+- **Gumroad:** tdsquad.gumroad.com (Game Bundle $4.99)
 
-## Games Published (16)
-All games located in `games/` — each is a single HTML5 Canvas file (7-16 KB, instant load):
+## Games (24 total)
+All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 
-### Free Games (11) — Pay What You Want ($0 minimum)
-1. **BrainRot Quiz Battle** — Trivia/quiz
-2. **Bounce Blitz** — Hyper-casual arcade
-3. **Card Clash** — Card game
-4. **Code Conquest** — Programming-themed
-5. **Gravity Dash** — Physics arcade
-6. **Light Trail** — Trail/reflex
-7. **Memory Matrix** — Memory puzzle
-8. **Pixel Tower** — Tower building
-9. **Space Trader** — Space trading sim
-10. **Word Rush** — Word game
-11. **Bolt Breaker** — Breakout-style
+### Published on itch.io (16)
+1. **Asteroid Dash** 🚀 — Space Shooter ($1 suggested)
+2. **Bolt Breaker** ⚡ — Breakout-style (free)
+3. **Bounce Blitz** 🏐 — Hyper-casual arcade (free)
+4. **BrainRot Quiz Battle** 🧠 — Trivia/quiz (free)
+5. **Card Clash** 🃏 — Card game (free)
+6. **Code Conquest** 💻 — Programming-themed (free)
+7. **Dungeon Bolt** ⚔️ — Roguelike RPG ($2.99 premium flagship)
+8. **Gravity Dash** 🌀 — Physics arcade (free)
+9. **Hex Match** 🔷 — Puzzle ($1 suggested)
+10. **Light Trail** 💡 — Arcade (free)
+11. **Memory Matrix** 🧩 — Memory puzzle (free)
+12. **Neon Snake** 🐍 — Classic reimagined ($1 suggested)
+13. **Pixel Tower** 🏗️ — Stacking (free)
+14. **Rhythm Tap** 🎵 — Rhythm action ($2 suggested)
+15. **Space Trader** 🛸 — Trading sim (free)
+16. **Word Rush** ⌨️ — Typing game (free)
 
-### Pay What You Want ($1-2 suggested)
-12. **Neon Snake** — $1 suggested
-13. **Asteroid Dash** — $1 suggested
-14. **Hex Match** — $1 suggested
-15. **Rhythm Tap** — $2 suggested
-
-### Premium
-16. **Dungeon Bolt** — $2.99 (flagship roguelike RPG)
+### Built, pending itch.io upload (8 new)
+17. **Color Match** 🎨 — Puzzle (free)
+18. **Cube Runner** 🧊 — 3D Runner (free)
+19. **Maze Runner** 🏃 — Maze navigation (free)
+20. **Planet Defense** 🌍 — Tower Defense (free)
+21. **Riddle Master** 🧙 — Brain Teaser (free)
+22. **Space Orbit** 🪐 — Space Arcade (free)
+23. **Tower Stack** 🏰 — Stacking (free)
+24. **Typing Blitz** 💨 — Typing speed (free)
 
 ### Shared Assets
 - `games/shared/monetization.js` (16.8 KB) — Global monetization module
-  - AdSense banner & interstitial ad slots
-  - Support button + donation link
-  - Cross-game promotion carousel
-  - Social sharing buttons
-  - Full game catalog (all 16 games)
 - `games/shared/games-menu.html` — Cross-game navigation
 - `games/shared/ads.js` — Ad integration
 
-## Store Listings
-Located in `store-listings/`:
-- `privacy-policy.md` + `privacy-policy.html` — Shared privacy policy
-- `bounce-blitz/` — listing.md, metadata.json
-- `brainrot-quiz/` — listing.md, metadata.json, icon.png, feature-graphic.png
-- `code-conquest/` — listing.md, metadata.json, icon.png, feature-graphic.png
-- `idle-critter-farm/` — Empty (planned game)
+## Websites & Platforms
+| Platform | URL | Status |
+|----------|-----|--------|
+| JellyBolt Games (org) | jellybolt-games.github.io/jellybolt-games | ✅ Live |
+| JellyBolt Games (personal) | tamirdresher.github.io/jellybolt-games | ✅ Live |
+| TechAI Explained | techai-explained.github.io/techai-explained | ✅ Live (11ty) |
+| Content Empire | tamirdresher.github.io/content-empire | ✅ Live |
+| dev.to | dev.to/techaiexplained | ✅ Active |
+| itch.io | jellyboltgames.itch.io | ✅ 16 games |
+| YouTube | UC0roFVTTy1nSW9Zc7DgcsmQ | ✅ 12 videos |
+| Google Play | JellyBolt Games Collection | ✅ Internal testing |
+| Gumroad | tdsquad.gumroad.com | ✅ Active |
 
-**metadata.json format:** Google Play compatible (title, description, category, rating, tags)
-
-## Landing Page (index.html)
-- Hero header with brand logo + tagline
-- Stats: "16 Games", "100% Free", "0 Downloads Needed"
-- Games grid (dynamically generated from JS array)
-- Game badges: Popular, New, Premium
-- 4 ad placements (header 728x90, 2x sidebar 300x250, footer 728x90)
-- Support section: BuyMeACoffee, itch.io, social links
-- AdSense scripts ready (publisher ID placeholder)
+### Custom Domains (NOT WORKING — need registrar action)
+- techai-explained.dev — No DNS records
+- content-empire.dev — No DNS records
+- jellybolt.dev — No DNS records
 
 ## Monetization
 
 ### Active
-- **itch.io:** jellybolt.itch.io — 16 games published
-- **Gumroad:** tdsquad.gumroad.com — 3 product IDs configured
+- **itch.io:** jellyboltgames.itch.io — 16 games (8 more pending upload)
+- **Gumroad:** tdsquad.gumroad.com — Game Bundle $4.99 + courses
+- **Amazon Associates:** Tag `jellybolt-20` configured, gear section on landing page (pending account activation)
 
 ### Pending
-- **Google AdSense** — Placeholder in all games + landing page (needs real publisher ID)
-- **BuyMeACoffee** — buymeacoffee.com/jellyboltgames (pending setup)
+- **Google AdSense** — Placeholder in all games + landing page
+- **BuyMeACoffee** — buymeacoffee.com/jellyboltgames
 - **Unity Affiliate** — pending signup
 - **JetBrains Affiliate** — pending signup
 
-### IAP & Revenue Design (REVENUE_STRATEGY.md)
-- **Cosmetic items:** Skins, themes, emotes, badges ($5-25)
-- **Battle Pass:** Seasonal $20/season (free + premium tiers)
-- **Rewarded ads:** Optional 30s video for bonus coins/lives
-- **VIP subscription:** $15/month for idle game content
-- **Revenue projections:** ~$182K Year 1 target (3 games combined)
-- **Billing:** RevenueCat (free up to $2.5K MTR)
-- **Ethics:** No loot boxes, no pay-to-win, no energy gates, no data selling
-
 ## Configuration
-- `config/affiliates.json` — All affiliate/monetization platform configs
+- `config/affiliates.json` — All affiliate/monetization platform configs (Amazon, Gumroad, itch.io, YouTube)
 - `.env.example` — Environment variable template
-
-## Documentation
-- `docs/GAME_CONCEPTS.md` — 3 planned games:
-  1. BrainRot Quiz Battle (in development)
-  2. Bounce Blitz (design phase)
-  3. Idle Critter Farm (design phase, Hebrew support planned)
-- `GAMES_CATALOG.md` — Complete game catalog with pricing
-- `ads/adsense-setup.md` — AdSense integration guide
 
 ## GitHub Actions
 - `ci.yml` — Validates JSON files + checks required directories
+- `pages-deploy.yml` — Deploy to GitHub Pages (org repo)
 
 ## Pending Actions
+- [ ] Sign up for Amazon Associates (affiliate-program.amazon.com) — tag jellybolt-20 ready
+- [ ] Upload 8 new games to itch.io (#48)
 - [ ] Register real AdSense publisher ID
 - [ ] Set up BuyMeACoffee page
-- [ ] Submit to Google Play (4 games have store listings ready)
-- [ ] Create Steam listing for Dungeon Bolt
-- [ ] Create YouTube channel for dev logs
-- [ ] Set up Discord community
-- [ ] Create social accounts (X/Twitter, Reddit)
-- [ ] Add FUNDING.yml for GitHub Sponsors
-- [ ] Build Idle Critter Farm (Hebrew support)
-- [ ] Create more store listing assets (icons, screenshots)
+- [ ] Register .dev domains (techai-explained.dev, content-empire.dev, jellybolt.dev)
+- [ ] Build dungeon game series (#49)
+- [ ] Render remaining video scripts (#51)
+- [ ] Publish articles to Dev.to/Hashnode (#52)
+- [ ] Set up Gmail API for tdsquadai monitoring (#50)
+- [ ] Record Squad for Kids demo videos (NO YouTube without approval)
