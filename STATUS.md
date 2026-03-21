@@ -1,4 +1,4 @@
-# JellyBolt Games — Project Status
+﻿# JellyBolt Games — Project Status
 Last updated: 2026-03-21
 
 ## Brand Identity
@@ -11,7 +11,7 @@ Last updated: 2026-03-21
 - **Contact:** tdsquadai@gmail.com
 - **Gumroad:** tdsquad.gumroad.com (Game Bundle $4.99)
 
-## Games (24 total)
+## Games (25 total)
 All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 
 ### Published on itch.io (16)
@@ -32,7 +32,7 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 15. **Space Trader** 🛸 — Trading sim (free)
 16. **Word Rush** ⌨️ — Typing game (free)
 
-### Built, pending itch.io upload (8 new)
+### Built, pending itch.io upload (9 new)
 17. **Color Match** 🎨 — Puzzle (free)
 18. **Cube Runner** 🧊 — 3D Runner (free)
 19. **Maze Runner** 🏃 — Maze navigation (free)
@@ -41,6 +41,7 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 22. **Space Orbit** 🪐 — Space Arcade (free)
 23. **Tower Stack** 🏰 — Stacking (free)
 24. **Typing Blitz** 💨 — Typing speed (free)
+25. **Dungeon Crawler Classic** - Tile-based dungeon crawler with fog of war (free)
 
 ### Shared Assets
 - `games/shared/monetization.js` (16.8 KB) — Global monetization module
