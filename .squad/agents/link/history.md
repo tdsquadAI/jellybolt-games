@@ -20,4 +20,13 @@ Owner: Tamir Dresher
 - Anonymous auth for frictionless onboarding
 
 ## Learnings
-(initialized — no learnings yet)
+
+### Backend & Infrastructure (seeded 2026-03-22)
+- **Supabase setup:** PostgreSQL backend, anonymous + email auth, Realtime for multiplayer features, Edge Functions (Deno)
+- **Current status:** Browser games don't require backend; Supabase will be critical when React Native mobile apps launch
+- **Billing integration:** RevenueCat webhooks configured for Google Play Billing (15% commission on first $1M/year)
+- **Analytics:** Firebase Analytics + Remote Config for A/B testing prices and features
+- **Privacy compliance:** COPPA-aware, minimal data collection, privacy policy in place
+- **Multiplayer readiness:** Supabase Realtime enables features like Quiz Battle leaderboards
+- **Key decisions made:** Supabase free tier for MVP, row-level security (RLS) on all tables, anonymous auth for frictionless onboarding
+- **Monetization backend:** RevenueCat free tier until $2,500/month tracked revenue, then 1% commission
