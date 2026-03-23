@@ -40,6 +40,7 @@ function Get-StaleIssues {
     param($Issues, [int]$DaysStale = 7)
     $cutoff = (Get-Date).AddDays(-$DaysStale)
     return $Issues | Where-Object {
+        if (-not $_.updatedAt) { return $false }
         $updated = [DateTime]::Parse($_.updatedAt)
         $updated -lt $cutoff
     }
