@@ -3,6 +3,7 @@
   "target": {
     "namespace": "android_app",
     "package_name": "com.jellybolt.dungeonbolt",
-    "sha256_cert_fingerprints": ["REPLACE_WITH_SIGNING_KEY_SHA256"]
+    "sha256_cert_fingerprints": ["1C:AD:F0:CC:30:7D:ED:19:A8:46:A2:14:99:A2:CF:3D:34:2A:B1:60:D8:B2:24:34:CE:C3:63:A3:72:9C:56:C9"]
   }
 }]
+
