@@ -112,7 +112,7 @@ function el(tag,attrs,html){
 if(!document.getElementById('ad-top')){
   const adTop=el('div',{class:'jb-ad-banner jb-ad-top',id:'jb-ad-top'},`
     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="TOP_BANNER"></ins>
+         data-ad-client="ca-pub-8350556723025693" data-ad-slot="TOP_BANNER"></ins>
     <span style="position:absolute">728×90 Ad</span>
   `);
   document.body.prepend(adTop);
@@ -121,7 +121,7 @@ if(!document.getElementById('ad-top')){
 if(!document.getElementById('ad-bottom')){
   const adBottom=el('div',{class:'jb-ad-banner jb-ad-bottom',id:'jb-ad-bottom'},`
     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="BOTTOM_BANNER"></ins>
+         data-ad-client="ca-pub-8350556723025693" data-ad-slot="BOTTOM_BANNER"></ins>
     <span style="position:absolute">728×90 Ad</span>
   `);
   document.body.appendChild(adBottom);
@@ -132,7 +132,7 @@ if(!document.getElementById('jb-interstitial')){
   const adInterstitial=el('div',{class:'jb-ad-interstitial',id:'jb-interstitial'},`
     <div class="ad-container">
       <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
-           data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="INTERSTITIAL"></ins>
+           data-ad-client="ca-pub-8350556723025693" data-ad-slot="INTERSTITIAL"></ins>
       <span style="position:absolute">300×250 Ad</span>
     </div>
     <div class="ad-timer" id="jb-interstitial-timer"></div>
@@ -146,7 +146,7 @@ const adLoading=el('div',{class:'jb-ad-loading',id:'jb-loading-ad'},`
   <h2>⚡ ${gameName}</h2>
   <div class="ad-container">
     <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
-         data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="LOADING_AD"></ins>
+         data-ad-client="ca-pub-8350556723025693" data-ad-slot="LOADING_AD"></ins>
     <span style="position:absolute">300×250 Ad</span>
   </div>
   <div class="loading-bar"><div class="loading-fill" id="jb-loading-fill"></div></div>
@@ -270,7 +270,7 @@ window.jbShareScore = function(score){
 /* ── AdSense script placeholder (uncomment with real pub ID) ── */
 // const adsScript=document.createElement('script');
 // adsScript.async=true;
-// adsScript.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX';
+// adsScript.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8350556723025693';
 // adsScript.crossOrigin='anonymous';
 // document.head.appendChild(adsScript);
 
