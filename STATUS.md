@@ -1,4 +1,4 @@
-﻿# JellyBolt Games — Project Status
+# JellyBolt Games — Project Status
 Last updated: 2026-03-21
 
 ## Brand Identity
@@ -52,9 +52,9 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 | Platform | URL | Status |
 |----------|-----|--------|
 | JellyBolt Games (org) | jellybolt-games.github.io/jellybolt-games | ✅ Live |
-| JellyBolt Games (personal) | tamirdresher.github.io/jellybolt-games | ✅ Live |
+| JellyBolt Games (personal) | jellybolt-games.github.io/jellybolt-games | ✅ Live |
 | TechAI Explained | techai-explained.github.io/techai-explained | ✅ Live (11ty) |
-| Content Empire | tamirdresher.github.io/content-empire | ✅ Live |
+| Content Empire | content-empire.github.io | ✅ Live |
 | dev.to | dev.to/techaiexplained | ✅ Active |
 | itch.io | jellyboltgames.itch.io | ✅ 16 games |
 | YouTube | UC0roFVTTy1nSW9Zc7DgcsmQ | ✅ 12 videos |

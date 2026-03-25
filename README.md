@@ -159,7 +159,7 @@ Love our games? Here's how you can support the studio:
 | 💰 **Pay what you want** | Most games have a "Name your price" option on itch.io |
 | ⚡ **Buy Dungeon Bolt** | [Our flagship game — $2.99](https://jellyboltgames.itch.io/dungeon-bolt) |
 | 📢 **Share with friends** | Tweet, post, tell your gamer friends! |
-| 🐛 **Report bugs** | [Open an issue](https://github.com/tamirdresher/jellybolt-games/issues) |
+| 🐛 **Report bugs** | Email us at [tdsquadai@gmail.com](mailto:tdsquadai@gmail.com) |
 
 > Every play, every star, every share helps us make more games. Thank you! ⚡
 
