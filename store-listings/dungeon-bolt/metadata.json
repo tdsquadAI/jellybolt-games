@@ -1,0 +1,23 @@
+{
+  "defaultLanguage": "en-US",
+  "title": "Dungeon Bolt",
+  "shortDescription": "Explore dungeons, collect gems, defeat enemies in this classic HTML5 adventure!",
+  "fullDescription": "Dungeon Bolt is a thrilling browser-based dungeon crawler that tests your strategy, reflexes, and treasure-hunting instincts. Navigate through hand-crafted dungeons, collect powerful gems, battle monsters, and unlock achievements as you descend ever deeper into the darkness.\n\n10+ unique enemy types, achievement system, leaderboard support, and fully optimized for mobile & desktop. Completely free to play.\n\nBuilt with pure HTML5/JavaScript — fast loading, no downloads required.",
+  "category": "GAME_ADVENTURE",
+  "contentRating": "EVERYONE",
+  "contactEmail": "tdsquadai@gmail.com",
+  "contactWebsite": "https://jellyboltgames.itch.io",
+  "privacyPolicyUrl": "https://jellybolt-games.github.io/jellybolt-games/store-listings/privacy-policy.html",
+  "appType": "GAME",
+  "isFreeApp": true,
+  "tags": [
+    "dungeon",
+    "adventure",
+    "rpg",
+    "dungeon crawler",
+    "html5",
+    "arcade",
+    "puzzle",
+    "strategy"
+  ]
+}
