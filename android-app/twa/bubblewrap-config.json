@@ -1,0 +1,15 @@
+{
+  "packageId": "com.jellybolt.dungeonbolt",
+  "host": "tamirdresher.github.io",
+  "startUrl": "/jellybolt-games/games/dungeon-bolt/",
+  "name": "Dungeon Bolt",
+  "shortName": "Dungeon Bolt",
+  "display": "standalone",
+  "themeColor": "#1a1a2e",
+  "backgroundColor": "#1a1a2e",
+  "iconUrl": "https://tamirdresher.github.io/jellybolt-games/assets/icons/dungeon-bolt-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": { "path": "android.keystore", "alias": "jellybolt" },
+  "appVersion": "1",
+  "appVersionCode": 1
+}
