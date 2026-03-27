@@ -15,6 +15,7 @@ const GAMES=[
 {id:'card-clash',name:'Card Clash',emoji:'🃏',genre:'Card Battle'},
 {id:'code-conquest',name:'Code Conquest',emoji:'💻',genre:'Strategy'},
 {id:'dungeon-bolt',name:'Dungeon Bolt',emoji:'⚔️',genre:'Roguelike'},
+{id:'escape-room',name:'Escape Room',emoji:'🔐',genre:'Puzzle Adventure'},
 {id:'gravity-dash',name:'Gravity Dash',emoji:'🌀',genre:'Platformer'},
 {id:'hex-match',name:'Hex Match',emoji:'🔷',genre:'Puzzle'},
 {id:'light-trail',name:'Light Trail',emoji:'💡',genre:'Arcade'},

@@ -1,6 +1,6 @@
 # 🎮 JellyBolt Games — Complete Game Catalog
 
-> **16 browser games. Play instantly. No downloads.**
+> **18 browser games. Play instantly. No downloads.**
 >
 > 🌐 [jellyboltgames.itch.io](https://jellyboltgames.itch.io)
 
@@ -19,23 +19,25 @@
 | 7 | 🔄 **Gravity Dash** | Platformer | Flip gravity to dodge obstacles, collect stars | [▶ Play](https://jellyboltgames.itch.io/gravity-dash) |
 | 8 | 🃏 **Card Clash** | Card Battle | Best-of-7 vs AI with Double/Shield/Peek powers | [▶ Play](https://jellyboltgames.itch.io/card-clash) |
 | 9 | 💡 **Light Trail** | Arena | Tron-style survival vs smart AI opponent | [▶ Play](https://jellyboltgames.itch.io/light-trail) |
+| 10 | 🔐 **Escape Room** | Puzzle Adventure | 5 interconnected rooms, 30+ puzzles, inventory system, 4 endings | [▶ Play](games/escape-room/index.html) |
+| 11 | 🚀 **Space Shooter 3D** | 3D Shooter | First-person space combat with Three.js, enemy waves, bosses, power-ups, mobile touch controls | [▶ Play](games/space-shooter-3d/index.html) |
 
 ## Pay What You Want
 
 | # | Game | Genre | Suggested | Description | Play |
 |---|------|-------|-----------|-------------|------|
-| 10 | 🐍 **Neon Snake** | Arcade | $1.00 | Classic snake with rainbow neon aesthetics, swipe controls | [▶ Play](https://jellyboltgames.itch.io/neon-snake) |
-| 11 | 🚀 **Asteroid Dash** | Shooter | $1.00 | Space shooter with powerups, shields, levels | [▶ Play](https://jellyboltgames.itch.io/asteroid-dash) |
-| 12 | 🔷 **Hex Match** | Puzzle | $1.00 | Hexagonal tile-matching with chain combos, 30 moves | [▶ Play](https://jellyboltgames.itch.io/hex-match) |
-| 13 | 🎵 **Rhythm Tap** | Rhythm | $2.00 | 4-lane rhythm game, D-F-J-K keys, 60s rounds, increasing BPM | [▶ Play](https://jellyboltgames.itch.io/rhythm-tap) |
-| 14 | 🏏 **Bolt Breaker** | Arcade | Free | Breakout with 10 neon levels and 5 powerup types | [▶ Play](https://jellyboltgames.itch.io/bolt-breaker) |
-| 15 | 🚀 **Space Trader** | Simulation | Free | Buy-low-sell-high across 6 star systems in 30 turns | [▶ Play](https://jellyboltgames.itch.io/space-trader) |
+| 12 | 🐍 **Neon Snake** | Arcade | $1.00 | Classic snake with rainbow neon aesthetics, swipe controls | [▶ Play](https://jellyboltgames.itch.io/neon-snake) |
+| 13 | 🚀 **Asteroid Dash** | Shooter | $1.00 | Space shooter with powerups, shields, levels | [▶ Play](https://jellyboltgames.itch.io/asteroid-dash) |
+| 14 | 🔷 **Hex Match** | Puzzle | $1.00 | Hexagonal tile-matching with chain combos, 30 moves | [▶ Play](https://jellyboltgames.itch.io/hex-match) |
+| 15 | 🎵 **Rhythm Tap** | Rhythm | $2.00 | 4-lane rhythm game, D-F-J-K keys, 60s rounds, increasing BPM | [▶ Play](https://jellyboltgames.itch.io/rhythm-tap) |
+| 16 | 🏏 **Bolt Breaker** | Arcade | Free | Breakout with 10 neon levels and 5 powerup types | [▶ Play](https://jellyboltgames.itch.io/bolt-breaker) |
+| 17 | 🚀 **Space Trader** | Simulation | Free | Buy-low-sell-high across 6 star systems in 30 turns | [▶ Play](https://jellyboltgames.itch.io/space-trader) |
 
 ## Premium
 
 | # | Game | Genre | Price | Description | Play |
 |---|------|-------|-------|-------------|------|
-| 16 | ⚡ **Dungeon Bolt** | Roguelite RPG | **$2.99** | Flagship! 5-floor dungeon crawler with 11 enemy types, loot, shops, bosses, permadeath | [▶ Play](https://jellyboltgames.itch.io/dungeon-bolt) |
+| 18 | ⚡ **Dungeon Bolt** | Roguelite RPG | **$2.99** | Flagship! 5-floor dungeon crawler with 11 enemy types, loot, shops, bosses, permadeath | [▶ Play](https://jellyboltgames.itch.io/dungeon-bolt) |
 
 ---
 
@@ -56,7 +58,7 @@
 | Arcade | Bounce Blitz, Neon Snake, Pixel Tower, Bolt Breaker |
 | Puzzle | BrainRot Quiz, Memory Matrix, Hex Match |
 | Strategy | Code Conquest, Card Clash |
-| Action | Asteroid Dash, Light Trail, Gravity Dash |
+| Action | Asteroid Dash, Light Trail, Gravity Dash, Space Shooter 3D |
 | Rhythm | Rhythm Tap |
 | RPG | Dungeon Bolt |
 | Educational | Word Rush |
