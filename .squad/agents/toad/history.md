@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Monetization Strategy
 - **Model:** Free-to-play with cosmetic IAPs + optional ads
@@ -30,3 +30,4 @@ Owner: Tamir Dresher
 - **Upcoming features:** Cosmetic IAPs, seasonal battle passes, premium subscriptions (Game 3 only)
 - **Billing platforms:** Google Play Billing (primary), RevenueCat for receipt validation + webhooks
 - **Constraints:** NO real-money gambling, NO loot boxes, NO pay-to-win mechanics — cosmetics and time-savers only
+
