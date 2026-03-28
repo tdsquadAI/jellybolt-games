@@ -17,9 +17,9 @@ android {
     signingConfigs {
         release {
             storeFile file('../jellybolt-release.keystore')
-            storePassword 'jellybolt2024'
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: project.findProperty("keystorePassword") ?: ""
             keyAlias 'jellybolt'
-            keyPassword 'jellybolt2024'
+            keyPassword System.getenv("KEYSTORE_PASSWORD") ?: project.findProperty("keystorePassword") ?: ""
         }
     }
 
