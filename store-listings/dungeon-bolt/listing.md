@@ -1,4 +1,4 @@
-# Dungeon Bolt — Google Play Store Listing
+# Dungeon Bolt — Play Store Listing
 
 **Developer:** JellyBolt Games
 
@@ -6,55 +6,41 @@
 Dungeon Bolt
 
 ## Short Description (80 chars)
-Explore dungeons, collect gems, defeat enemies in this classic HTML5 adventure!
+Roguelite dungeon crawler! 5 floors, 11 enemies, loot & permadeath ⚡ JellyBolt
 
 ## Full Description
 
-Dungeon Bolt is a thrilling browser-based dungeon crawler that tests your strategy,
-reflexes, and treasure-hunting instincts. Navigate through hand-crafted dungeons,
-collect powerful gems, battle monsters, and unlock achievements as you descend ever
-deeper into the darkness.
+You descend. You fight. You die. You try again. ⚡
 
-🗡️ **CLASSIC DUNGEON CRAWLER GAMEPLAY**
-Step into the boots of a brave hero and conquer floor after floor of enemy-filled
-dungeons. Move tactically, manage your health, and decide when to fight and when to
-run. Every decision matters!
+Dungeon Bolt is a roguelite dungeon crawler where every run is different and every death teaches you something. Navigate 5 floors of increasingly brutal dungeons, fight 11 unique enemy types, grab loot, visit shops, and face bosses that will end you if you're not ready.
 
-💎 **COLLECT GEMS & POWER-UPS**
-Scatter gems and hidden power-ups lurk around every corner. Collect them to boost
-your score, restore health, and unlock new abilities. The more you collect, the
-tougher you become.
+And when you die? You lose everything. Start over. That's the deal.
 
-👾 **10+ UNIQUE ENEMY TYPES**
-From skittering slimes to armored knights, each enemy type has its own behavior
-and attack pattern. Learn their quirks and develop strategies to defeat them
-efficiently — or get creative and find shortcuts!
+⚔️ **5 FLOORS OF PAIN**
+Each floor is harder than the last. New enemies, tighter corridors, nastier traps. Floor 1 feels easy. Floor 5 will humble you. Only the best make it to the final boss — and even they usually die.
 
-🏆 **ACHIEVEMENT SYSTEM**
-Complete in-game challenges to unlock achievements. Are you a speed runner? A
-pacifist? A completionist? There are achievements for every playstyle. How many
-can you unlock?
+👾 **11 ENEMY TYPES**
+From basic slimes to armored knights to boss-tier nightmares. Each enemy has its own attack pattern and behavior. Learn them or get wrecked. There's no "easy mode."
 
-📱 **PLAYS GREAT ON MOBILE & DESKTOP**
-Dungeon Bolt is fully optimized for touchscreen and mouse/keyboard play. Whether
-you're on your phone during your commute or on a desktop at home, the experience
-is seamless and responsive.
+💰 **LOOT & SHOPS**
+Find gold, weapons, and power-ups scattered through the dungeon. Spend wisely at shops between floors. Do you buy the sword upgrade or the health potion? Choose wrong and Floor 4 will punish you.
 
-🆓 **COMPLETELY FREE TO PLAY**
-No paywalls. No energy limits. No waiting. Just pick up and play whenever you
-want, for as long as you want.
+💀 **PERMADEATH**
+Die and you start from Floor 1 with nothing. No save states. No checkpoints. No mercy. That's what makes every successful run feel INCREDIBLE.
+
+⚡ **INSTANT PLAY**
+The entire game loads in under a second. No 500 MB downloads. No patches. No loading screens. Just open and start crawling. Works offline too.
 
 ✨ **WHY YOU'LL LOVE IT**
-• Addictive dungeon crawling — one more floor, always
-• Simple tap/click controls, deep strategic gameplay
-• Free to play — no paywalls, no ads interrupting gameplay
-• Offline ready — no constant internet connection required
-• Regular updates with new dungeons and enemies
-• Lightweight — runs smoothly on all devices
+• Addictive "one more run" roguelite loop
+• Every run is different — procedural enemy placement
+• Simple controls, deep strategic decisions
+• No paywalls — the full game is free, forever
+• No internet needed — play offline anywhere
+• Tiny app size — barely takes any space
+• Built by JellyBolt Games — fun hits different ⚡
 
-Built with pure HTML5/JavaScript — fast loading, no downloads required.
-
-Download Dungeon Bolt and start your adventure today! ⚔️💎
+Think you can beat all 5 floors? Prove it. ⚔️⚡
 
 ## Category
 Games > Adventure

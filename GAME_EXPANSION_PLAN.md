@@ -1,383 +1,494 @@
-# 🎮 JellyBolt Games — Expansion Plan
+# ⚡ JellyBolt Games — Studio Expansion Roadmap
 
-> **Date:** 2026-07-16
-> **Author:** Data (Code Expert, Squad)
-> **Status:** ACTIVE
+<div align="center">
+
+```
+     ⚡ J E L L Y B O L T   G A M E S ⚡
+         Fun hits different.™
+```
+
+**Publisher:** JellyBolt Games · **Contact:** tdsquadai@gmail.com · **Web:** [jellyboltgames.itch.io](https://jellyboltgames.itch.io)
+
+</div>
+
+> **Version:** 2.0 · **Date:** July 2026
+> **Status:** 🟢 ACTIVE — Phase 1 in progress
 
 ---
 
-## Executive Summary
+## 🎯 Studio Vision
 
-JellyBolt Games has 40 HTML5 games running in WebView-wrapped Android apps, with 3 apps on Play Console. This plan expands to **8 standalone game apps**, evaluates **advanced game engines** for WebView, and designs a **shared addiction framework** to maximize engagement and retention.
+JellyBolt Games is an indie studio building **instant-play mobile games** — lightweight, addictive, beautifully neon. Every game loads in under a second, plays offline, and looks like it was dipped in liquid lightning.
 
----
+This roadmap takes us from **3 Play Store apps** to a **full indie game studio portfolio** of 11+ titles, unified by a shared progression system that keeps players coming back across the entire JellyBolt ecosystem.
 
-## 1. Standalone Apps — Top 8 Picks
+### Brand DNA
 
-Games selected based on: depth/complexity (larger codebase = more features), replay value, genre appeal on mobile, and standalone viability (the game must carry an app listing on its own).
-
-### Tier 1 — Ship First (Highest Impact)
-
-| # | Game | Package Name | Size | Why Standalone-Worthy |
-|---|------|-------------|------|----------------------|
-| 1 | **Dungeon Bolt** | `com.jellybolt.dungeonbolt` | 30.5 KB | Flagship roguelite RPG. 5 floors, 11 enemy types, loot, shops, bosses, permadeath. Deepest game in the catalog. Premium-tier quality. Roguelites are top-grossing on mobile. |
-| 2 | **Quest RPG** | `com.jellybolt.questrpg` | 43.7 KB | Full RPG experience with progression. Large codebase = rich content. RPG genre has massive mobile audience and high session times. |
-| 3 | **Escape Room** | `com.jellybolt.escaperoom` | 32.2 KB | 5 interconnected rooms, 30+ puzzles, inventory system, 4 endings. Puzzle-adventure is huge on mobile (The Room, Escape games). |
-
-### Tier 2 — Ship Second (Strong Engagement)
-
-| # | Game | Package Name | Size | Why Standalone-Worthy |
-|---|------|-------------|------|----------------------|
-| 4 | **Block Storm** | `com.jellybolt.blockstorm` | 39.7 KB | Tetris-like mechanics = instant recognition. Massive casual audience. High replay value with progressive difficulty. |
-| 5 | **Merge Master** | `com.jellybolt.mergemaster` | 67.1 KB | Largest game in catalog. Merge mechanics are proven addiction loops (Merge Dragons, 2048). Perfect for IAP monetization later. |
-| 6 | **Battle Royale** | `com.jellybolt.battleroyale` | 32.8 KB | Battle royale genre recognition. Complex gameplay with multiple systems. Trend-riding appeal. |
-
-### Tier 3 — Ship Third (Niche Appeal)
-
-| # | Game | Package Name | Size | Why Standalone-Worthy |
-|---|------|-------------|------|----------------------|
-| 7 | **Tower Defense** | `com.jellybolt.towerdefense` | 26.9 KB | Tower defense has dedicated fanbase. Strategic depth with replayability. Easy to extend with new maps/towers. |
-| 8 | **Bubble Pop** | `com.jellybolt.bubblepop` | 44.6 KB | Second-largest game. Bubble shooter is proven casual genre (Bubble Witch, Bubble Shooter). Mass-market appeal. |
-
-### Already on Play Console
-
-| App | Package Name | Status |
-|-----|-------------|--------|
-| JellyBolt Games Collection | `com.jellybolt.games` | Closed testing (active) |
-| BrainRot Quiz Battle | `com.jellybolt.brainrotquiz` | Internal testing |
-| Code Conquest | `com.jellybolt.codeconquest` | Internal testing |
-
-**Total after expansion: 11 apps on Play Console**
+| Element | Value |
+|---------|-------|
+| **Publisher** | JellyBolt Games |
+| **Visual identity** | Dark backgrounds (`#050510`), neon green accent (`#00ff88`), electric cyan (`#58a6ff`), gold highlights (`#ffcc00`) |
+| **Icon / motif** | ⚡ Lightning bolt |
+| **Tagline** | "Fun hits different." |
+| **Voice** | Energetic, Gen-Z friendly, no-BS. Think "your friend who found the best game and is screaming about it" |
+| **App naming** | Game name as title (e.g., "Dungeon Bolt", "BrainRot Quiz Battle"). Publisher attribution via Play Store developer profile |
+| **Ethical stance** | No loot boxes, no pay-to-win, no energy gates. Players pay for expression, never for advantage. |
 
 ---
 
-## 2. Advanced Game Engines — WebView Feasibility
+## 📊 Current Portfolio
 
-### Engine Evaluation Matrix
+| App | Package | Play Store Status | Category |
+|-----|---------|-------------------|----------|
+| ⚡ JellyBolt Games - Arcade Collection | `com.jellybolt.games` | Closed testing (active) | `GAME_CASUAL` |
+| 🧠 BrainRot Quiz Battle | `com.jellybolt.brainrotquiz` | Internal testing | `GAME_TRIVIA` |
+| ⚔️ Code Conquest | `com.jellybolt.codeconquest` | Internal testing | `GAME_BOARD` |
 
-| Engine | WebView Feasible? | Build Size | Performance | Effort | Verdict |
-|--------|-------------------|-----------|-------------|--------|---------|
-| **Unity WebGL** | ⚠️ Problematic | 15-50+ MB | Poor in WebView (WASM + WebGL2 overhead, no GPU acceleration in Android WebView) | High (Unity license, C# skills) | **NOT recommended** for WebView apps. Unity WebGL is designed for desktop browsers. Android WebView lacks proper WebGL2 + SharedArrayBuffer support. |
-| **Godot HTML5** | ✅ Better | 5-15 MB | Moderate (lighter WASM, can target WebGL1) | Medium (GDScript is easy) | **Viable for simpler games**. Godot 4's HTML5 export is lighter than Unity. Works in WebView with WebGL1 fallback. Size is the main concern. |
-| **BabylonJS** | ✅ Good | 500KB-3MB (CDN) | Good (purpose-built for browser, WebGL1/2 adaptive) | Low-Medium (JavaScript) | **Best 3D option**. Native web tech, CDN-loadable, excellent mobile WebGL support. Already proven in our Space Shooter 3D. |
-| **PlayCanvas** | ✅ Good | 300KB-2MB (CDN) | Good (optimized for mobile web) | Low-Medium (JavaScript) | **Strong alternative to BabylonJS**. Lighter runtime, visual editor available. Great for 3D casual games. |
-| **Three.js** | ✅ Excellent | 150KB (CDN) | Excellent (most WebView-friendly) | Low (JavaScript, already used) | **Already in use**. Best performance-to-size ratio. Continue using for 3D content. |
-| **Cocos2d-x HTML5** | ⚠️ Dated | 2-5 MB | Moderate | Medium (dated ecosystem) | **Not recommended**. Ecosystem has stalled. Cocos Creator is the successor but targets native, not web. |
-| **Phaser 3** | ✅ Excellent | 200KB (CDN) | Excellent (designed for mobile web) | Low (JavaScript) | **Best 2D engine**. Already mentioned in stack. Massive community, CDN-ready, WebView-proven. |
-
-### Recommendation: Stay JavaScript-Native
-
-**Winner: Phaser 3 (2D) + Three.js/BabylonJS (3D)**
-
-Rationale:
-- Our apps use `file:///android_asset/` loading — no network needed for core game
-- CDN deps (Phaser, Three.js, BabylonJS) are OK per team confirmation
-- JavaScript engines keep builds tiny (7-65 KB per game currently!)
-- Unity/Godot WASM exports would balloon each app from ~1 MB to 15-50 MB
-- Android WebView's WebGL support is inconsistent across devices — simpler = better
-- Team already knows JavaScript; no engine-learning curve
-
-### 3 New Advanced-Engine Game Concepts
-
-#### 1. 🏎️ **Neon Drift** (Three.js / BabylonJS — 3D Racing)
-- Low-poly neon racing on procedural tracks
-- Tilt/touch steering, drift mechanics, speed boosts
-- 3D environment with Three.js — lightweight, visually striking
-- Package: `com.jellybolt.neondrift`
-- Engine: Three.js + cannon-es (physics)
-- Estimated size: ~50 KB game + CDN libs
-
-#### 2. 🗡️ **Phantom Arena** (Phaser 3 — 2D Action RPG)
-- Top-down hack-and-slash with procedural dungeons
-- Character classes, skill trees, equipment drops
-- Phaser 3 for silky 2D rendering with particle effects
-- Package: `com.jellybolt.phantomarena`
-- Engine: Phaser 3 (CDN)
-- Estimated size: ~80 KB game + CDN lib
-
-#### 3. 🌌 **Star Colonies** (BabylonJS — 3D Strategy)
-- Space colony management in low-poly 3D
-- Build stations, trade routes, defend against pirates
-- BabylonJS for orbit camera, 3D models, particle systems
-- Package: `com.jellybolt.starcolonies`
-- Engine: BabylonJS (CDN)
-- Estimated size: ~100 KB game + CDN lib
+**Full catalog:** 40 games across arcade, puzzle, strategy, RPG, shooter, rhythm, and simulation genres. All vanilla HTML5 Canvas + JS, 7–65 KB per game, playable in-browser or natively via Android WebView.
 
 ---
 
-## 3. Shared Addiction Framework
+## 1. ⚡ Standalone App Expansion — Top 8
 
-A reusable JavaScript module (`jellybolt-core.js`) that ALL games import, providing unified progression across the JellyBolt ecosystem.
+We're pulling the best games out of the collection and shipping them as standalone Play Store apps. Each one gets its own store listing, screenshots, icon, and Play Store category — built to rank independently.
 
-### 3.1 Daily Challenges & Streaks
+### 🥇 Tier 1 — Flagships (Ship First)
+
+| # | Title | Package | Category | Why It's a Standalone |
+|---|-------|---------|----------|----------------------|
+| 1 | **Dungeon Bolt** | `com.jellybolt.dungeonbolt` | `GAME_ADVENTURE` | ⚡ Our flagship. 5-floor roguelite with 11 enemy types, loot drops, shops, bosses, and permadeath. This IS the game that justifies the studio name. Premium-tier depth in a 30 KB package. |
+| 2 | **Quest RPG** | `com.jellybolt.questrpg` | `GAME_ROLE_PLAYING` | Full RPG with character progression, quests, and combat. Largest codebase (44 KB) = deepest content. RPGs drive the highest session times on mobile. |
+| 3 | **Escape Room** | `com.jellybolt.escaperoom` | `GAME_PUZZLE` | 5 interconnected rooms, 30+ puzzles, inventory system, 4 endings. Puzzle-adventure is a proven Play Store category (The Room series, Escape games). |
+
+### 🥈 Tier 2 — High Engagement (Ship Second)
+
+| # | Title | Package | Category | Why It's a Standalone |
+|---|-------|---------|----------|----------------------|
+| 4 | **Block Storm** | `com.jellybolt.blockstorm` | `GAME_PUZZLE` | Tetris-like mechanics = instant recognition. Everyone knows how to play. Infinite replay. 40 KB of pure dopamine. |
+| 5 | **Merge Master** | `com.jellybolt.mergemaster` | `GAME_CASUAL` | Our biggest game (67 KB). Merge mechanics are clinically proven addiction loops. Perfect for future coin-sink monetization. |
+| 6 | **Battle Royale** | `com.jellybolt.battleroyale` | `GAME_ACTION` | Genre recognition alone drives downloads. Complex multi-system gameplay. Great ASO keywords. |
+
+### 🥉 Tier 3 — Niche Gems (Ship Third)
+
+| # | Title | Package | Category | Why It's a Standalone |
+|---|-------|---------|----------|----------------------|
+| 7 | **Tower Defense** | `com.jellybolt.towerdefense` | `GAME_STRATEGY` | TD has a dedicated fanbase that searches specifically for it. Strategic depth, easy to extend with new maps/towers. |
+| 8 | **Bubble Pop** | `com.jellybolt.bubblepop` | `GAME_CASUAL` | Second-largest game (45 KB). Bubble shooter is the #1 casual genre on mobile. Pure mass-market appeal. |
+
+### Full Studio Lineup (After Expansion)
 
 ```
-┌─────────────────────────────────────────┐
-│  🔥 Daily Streak: 7 days               │
-│  ├── Day 1: 10 coins                   │
-│  ├── Day 3: 25 coins + Mystery Box      │
-│  ├── Day 7: 100 coins + Rare Skin       │
-│  ├── Day 14: 250 coins + Epic Skin      │
-│  └── Day 30: 1000 coins + Legendary     │
-│                                          │
-│  Today's Challenge:                      │
-│  "Score 500+ in Bounce Blitz"            │
-│  Reward: 50 XP + 15 coins              │
-└─────────────────────────────────────────┘
+⚡ JellyBolt Games — Play Store Portfolio
+
+ LIVE NOW                           NEW — PHASE 1               NEW — PHASE 3
+ ─────────                          ──────────────               ──────────────
+ 🎮 JellyBolt Collection            ⚔️ Dungeon Bolt              🧱 Block Storm
+ 🧠 BrainRot Quiz Battle            🗡️ Quest RPG                 🔄 Merge Master
+ ⚔️ Code Conquest                   🔐 Escape Room               💥 Battle Royale
+                                                                  🏰 Tower Defense
+                                                                  🫧 Bubble Pop
+
+ FUTURE — PHASE 4 (New IP)
+ ─────────────────────────
+ 🏎️ Neon Drift (3D racing)
+ ⚡ Phantom Arena (action RPG)
+ 🌌 Star Colonies (3D strategy)
+
+ Total: 14 apps from one indie studio
 ```
 
-- **Daily challenge** per game (rotates difficulty)
-- **Cross-game daily**: "Play 3 different games today" → bonus XP
-- **Streak system**: Consecutive days playing ANY JellyBolt game
-- **Streak protection**: Miss a day? Spend 50 coins to restore
-- Storage: `localStorage` with key prefix `jb_`
+---
 
-### 3.2 XP & Leveling System
+## 2. 🔧 Game Engine Strategy
+
+### Why We Stay JavaScript-Native
+
+| Engine | WebView OK? | Build Size | Our Verdict |
+|--------|------------|-----------|-------------|
+| **Vanilla Canvas + JS** | ✅ Perfect | 7–65 KB | **Our core stack.** Instant load, offline, tiny APKs. Keep using for 2D games. |
+| **Phaser 3** | ✅ Excellent | 200 KB (CDN) | **Best upgrade for 2D.** Particle effects, physics, sprite sheets. Use for next-gen 2D titles. |
+| **Three.js** | ✅ Excellent | 150 KB (CDN) | **Already in use** (Space Shooter 3D). Best 3D-to-size ratio. |
+| **BabylonJS** | ✅ Good | 500 KB–3 MB (CDN) | **Best for complex 3D.** Orbit cameras, PBR materials, full scene graphs. |
+| **Unity WebGL** | ❌ No | 15–50 MB | **Rejected.** WASM overhead, SharedArrayBuffer issues, 3-10s startup. Kills the "instant play" brand promise. |
+| **Godot HTML5** | ⚠️ Marginal | 5–15 MB | **Not worth it.** Still too heavy for WebView. Marginal quality gain over JS. |
+
+**Decision:** Phaser 3 (2D) + Three.js/BabylonJS (3D). JavaScript is our competitive advantage — games that load before the splash screen fades.
+
+### 3 New Game Concepts (Phase 4)
+
+These use advanced engines while staying true to the JellyBolt aesthetic: neon colors, dark backgrounds, fast gameplay.
+
+#### 🏎️ Neon Drift
+> *Low-poly neon racing. Drift through procedural tracks. One thumb, infinite speed.*
+
+- **Engine:** Three.js + cannon-es physics
+- **Package:** `com.jellybolt.neondrift`
+- **Visual style:** Synthwave tracks glowing against void-black space. Neon trail particles.
+- **Mechanic hook:** Drift-to-boost. The more you drift, the faster you go. But lose control and you're toast.
+- **Estimated size:** ~50 KB game + CDN libs
+
+#### ⚡ Phantom Arena
+> *Top-down hack-and-slash. Procedural dungeons. Pixel-perfect carnage.*
+
+- **Engine:** Phaser 3
+- **Package:** `com.jellybolt.phantomarena`
+- **Visual style:** JellyBolt neon-dark with sprite-based characters and particle explosions
+- **Mechanic hook:** Combo chains. Kill enemies fast enough and your damage multiplier climbs. Stop killing and it resets. Never. Stop. Swinging.
+- **Estimated size:** ~80 KB game + CDN lib
+
+#### 🌌 Star Colonies
+> *Build your empire among the stars. Trade, expand, defend. One more turn...*
+
+- **Engine:** BabylonJS
+- **Package:** `com.jellybolt.starcolonies`
+- **Visual style:** Low-poly space stations orbiting glowing planets. UI in JellyBolt neon green on dark panels.
+- **Mechanic hook:** "One more turn" syndrome. Each turn takes 30 seconds but the consequences unfold across 5 turns. You can't stop mid-chain.
+- **Estimated size:** ~100 KB game + CDN lib
+
+---
+
+## 3. ⚡ JellyBolt Core — The Addiction Framework
+
+A shared JavaScript module (`games/shared/jellybolt-core.js`) loaded by every game, providing a unified player identity and progression system across the entire JellyBolt ecosystem.
+
+**Design principle:** No dark patterns. Engagement through genuine reward loops, not manipulation. Aligned with our revenue strategy: "Players pay for expression, never for advantage."
+
+### 3.1 🔥 Daily Streaks & Challenges
 
 ```
-Level 1  ──────────── Level 2  ──────────── Level 3
-   0 XP      100 XP       250 XP       500 XP
-   │                                        │
-   └── XP Sources ──────────────────────────┘
-       • Complete a game round: 10 XP
-       • Win / high score: 25 XP
-       • Daily challenge: 50 XP
-       • First game of day: 20 XP
-       • Try a new game: 30 XP (first time)
+ ┌────────────────────────────────────────────┐
+ │  ⚡ JellyBolt Daily                        │
+ │                                            │
+ │  🔥 Streak: 7 days                         │
+ │  ┌─────┬─────┬─────┬─────┬─────┬─────┐   │
+ │  │ ✅  │ ✅  │ ✅  │ ✅  │ ✅  │ ✅  │   │
+ │  │ Mon │ Tue │ Wed │ Thu │ Fri │ Sat │   │
+ │  └─────┴─────┴─────┴─────┴─────┴─────┘   │
+ │                                            │
+ │  Today's Challenge:                        │
+ │  "Clear Floor 3 in Dungeon Bolt"           │
+ │  Reward: 50 XP + 15 ⚡coins               │
+ │                                            │
+ │  🎁 Day 7 Reward: 100 ⚡coins + Neon Skin │
+ └────────────────────────────────────────────┘
 ```
 
-- **Shared XP pool** across all JellyBolt games
-- **Player Level** with titles: Rookie (1-5) → Pro (6-15) → Elite (16-30) → Legend (31+)
-- **Level-up rewards**: Coins, unlock new themes, special power-ups
-- **XP multiplier**: Streak bonus (×1.5 at 7 days, ×2 at 30 days)
-- Persisted in `localStorage('jb_player_profile')`
+| Streak Day | Reward |
+|-----------|--------|
+| Day 1 | 10 ⚡coins |
+| Day 3 | 25 ⚡coins + Mystery Box |
+| Day 7 | 100 ⚡coins + Rare Skin |
+| Day 14 | 250 ⚡coins + Epic Skin |
+| Day 30 | 1000 ⚡coins + Legendary title |
 
-### 3.3 Unlockable Content
+- **Daily challenge** rotates per game — fresh every 24h
+- **Cross-game daily**: "Play 3 JellyBolt games today" → bonus XP
+- **Streak protection**: Miss a day? Spend 50 ⚡coins to keep your streak alive
+- Storage: `localStorage` with `jb_` prefix — works offline, no backend needed
 
-| Category | Examples | Unlock Method |
+### 3.2 📈 XP & Leveling
+
+| Action | XP Earned |
+|--------|-----------|
+| Complete any round | +10 XP |
+| Win / beat high score | +25 XP |
+| Complete daily challenge | +50 XP |
+| First game of the day | +20 XP |
+| Try a new JellyBolt game | +30 XP (first time only) |
+
+**Level titles** — shown on leaderboards and game-over screens:
+
+| Level Range | Title | Color |
+|------------|-------|-------|
+| 1–5 | ⚡ Rookie | White |
+| 6–15 | ⚡ Pro | Green (`#00ff88`) |
+| 16–30 | ⚡ Elite | Cyan (`#58a6ff`) |
+| 31–50 | ⚡ Legend | Gold (`#ffcc00`) |
+| 51+ | ⚡ Mythic | Magenta (`#ff006e`) |
+
+**Streak multiplier:** ×1.5 XP at 7-day streak, ×2 XP at 30-day streak.
+
+### 3.3 🎨 Unlockables
+
+| Category | Examples | How to Unlock |
 |----------|----------|---------------|
-| **Themes** | Dark Mode, Retro, Ocean, Neon Pink, Gold | Level milestones |
-| **Skins** | Character skins, board skins per game | Coins / achievements |
-| **Power-ups** | Slow-mo, Shield, Score ×2, Extra Life | Coins (50-200 each) |
-| **Titles** | "Speed Demon", "Puzzle King", "Streak Master" | Specific achievements |
-| **Borders** | Profile card borders shown on leaderboard | Rare achievements |
+| **Themes** | Void Black, Retro Pixel, Ocean Blue, Neon Pink, JellyBolt Gold | Level milestones |
+| **Skins** | Character/board skins per game (neon outlines, particle trails) | ⚡coins or achievements |
+| **Power-ups** | Slow-mo, Shield, Score ×2, Extra Life | ⚡coins (50–200 each) |
+| **Titles** | "Speed Demon", "Puzzle King", "Streak Master", "Bolt Legend" | Specific achievements |
+| **Borders** | Neon glow borders on profile card | Rare/epic achievements |
 
-### 3.4 Leaderboards
+All cosmetic. No gameplay advantages. No pay-to-win. Ever.
 
-- **Local leaderboard** per game (top 100 scores in localStorage)
-- **Personal bests** with date tracking
-- **Cross-game "JellyBolt Score"**: Weighted sum of best scores across all games
-- **Future-ready**: Data structure designed for Firebase/Supabase sync later
+### 3.4 🏆 Leaderboards
 
-```javascript
-// Leaderboard entry structure
-{
-  playerName: "Player",  // Customizable
-  score: 1500,
-  game: "dungeon-bolt",
-  date: "2026-07-16",
-  level: 12,
-  title: "Dungeon Master"
-}
-```
+- **Per-game top 100** (localStorage, instant)
+- **Personal best** with date + level at time of score
+- **⚡ JellyBolt Score**: Weighted composite across all games — the "studio-wide" rank
+- **Future-ready**: Data schema designed to sync to Firebase/Supabase when we add cloud leaderboards
 
-### 3.5 Achievement System
+### 3.5 🎖️ Achievements
 
 | Achievement | Condition | Reward |
 |-------------|-----------|--------|
-| 🎮 First Steps | Play any game once | 10 coins |
-| 🏆 Century Club | Score 100+ in any game | 25 coins |
-| 🔥 Week Warrior | 7-day streak | 100 coins + "Dedicated" title |
-| 🌟 Game Explorer | Play 10 different games | 50 coins + "Explorer" title |
-| 💎 Completionist | Play all 40 games | 500 coins + "Legend" title |
-| ⚡ Speed Demon | Complete Word Rush under 30s | 75 coins |
-| 🧠 Big Brain | Perfect score in BrainRot Quiz | 100 coins |
-| 🗡️ Dungeon Master | Clear all 5 floors in Dungeon Bolt | 200 coins |
-| 🏗️ Architect | Stack 50 blocks in Pixel Tower | 50 coins |
-| 🎯 Sharpshooter | 95%+ accuracy in Sniper Elite | 75 coins |
+| ⚡ First Bolt | Play any JellyBolt game once | 10 ⚡coins |
+| 🏆 Century Club | Score 100+ in any game | 25 ⚡coins |
+| 🔥 Week Warrior | 7-day streak | 100 ⚡coins + "Dedicated" title |
+| 🌟 Game Explorer | Play 10 different JellyBolt games | 50 ⚡coins + "Explorer" title |
+| 💎 Bolt Completionist | Play all 40 games | 500 ⚡coins + "Legend" title |
+| ⚡ Lightning Fingers | Complete Word Rush in under 30s | 75 ⚡coins |
+| 🧠 Galaxy Brain | Perfect score in BrainRot Quiz | 100 ⚡coins |
+| ⚔️ Bolt Slayer | Clear all 5 floors in Dungeon Bolt | 200 ⚡coins |
+| 🏗️ Tower Architect | Stack 50+ blocks in Pixel Tower | 50 ⚡coins |
+| 🎯 Dead Eye | 95%+ accuracy in Sniper Elite | 75 ⚡coins |
 
-- **Toast notifications** on unlock
-- **Achievement gallery** accessible from any game's pause menu
-- **Rarity tiers**: Common → Uncommon → Rare → Epic → Legendary
+**Rarity tiers:** Common → Uncommon → Rare → Epic → ⚡Legendary
 
-### 3.6 "One More Round" Hooks
+Achievement toasts use the JellyBolt neon style — green glow animation with bolt icon.
 
-1. **Near-miss feedback**: "You were 3 points from a new high score!" → Play Again button pulsates
-2. **Progressive difficulty**: Each round slightly harder — player always feels "I almost had it"
-3. **Post-game tease**: "Next reward at Level 8 (2 more games!)" shown on game-over screen
-4. **Comeback mechanic**: After 3 losses, offer a free power-up for next round
-5. **Session timer reward**: "You've been playing 10 minutes — here's 5 bonus coins!"
-6. **Daily countdown**: "Daily challenge resets in 4h 23m" — creates urgency
-7. **Social comparison**: "You're in the top 15% of Bounce Blitz players!" (local data)
+### 3.6 🔄 "One More Round" Hooks
 
-### 3.7 Reward Loops — Currency System
+Every game-over screen is designed to make you tap "Play Again":
+
+1. **Near-miss**: "3 points from a new high score! ⚡" → Play Again button glows
+2. **Progressive difficulty**: Rounds get slightly harder. You always feel "I almost had it"
+3. **Reward tease**: "Next reward at Level 8 — just 2 more games! ⚡" on game-over
+4. **Comeback power-up**: After 3 losses, offer a free power-up. Turns frustration into "let me try ONE more time"
+5. **Session bonus**: "10-minute bonus: +5 ⚡coins!" — rewards longer play
+6. **Urgency**: "Daily challenge resets in 4h 23m" — time pressure
+7. **Social proof**: "You're top 15% in Bounce Blitz!" — competitive drive (local data)
+
+### 3.7 💰 Currency System
 
 ```
-┌─────────────────────────────────────────┐
-│  💰 Coins (common)                      │
-│  └── Earned: gameplay, streaks, dailies │
-│  └── Spent: power-ups, skins, streak   │
-│            protection                    │
-│                                          │
-│  💎 Gems (premium, rare)                │
-│  └── Earned: achievements, milestones   │
-│  └── Spent: premium skins, themes      │
-│                                          │
-│  ⚡ Energy (session limiter - optional) │
-│  └── Recharges: 1 per 15 min, 5 max    │
-│  └── Bypass: Watch ad (future) or gems │
-└─────────────────────────────────────────┘
+ ⚡coins (common)              💎 Gems (premium)
+ ─────────────────             ───────────────────
+ Earned: gameplay,             Earned: achievements,
+ streaks, dailies,             milestones, 30-day
+ achievements                  streaks
+
+ Spent: power-ups,             Spent: premium skins,
+ common skins, streak          exclusive themes,
+ protection                    legendary borders
 ```
 
-- **No real-money purchases** initially — purely earned
-- **Designed for future IAP**: Coin packs, gem packs, ad-skip
-- **Cross-game wallet**: Coins earned in any game work in any game
+- **No real-money purchases** at launch — everything is earned through play
+- **Cross-game wallet**: ⚡coins earned in Dungeon Bolt can buy skins in Bounce Blitz
+- **Future-ready for IAP**: ⚡coin packs, 💎gem packs, ad-skip passes (when we enable RevenueCat)
 
-### 3.8 Implementation — `jellybolt-core.js`
+### 3.8 🛠️ Implementation — `jellybolt-core.js`
 
-Single file, ~15 KB, included via `<script>` tag in every game:
+Single file (~15 KB), loaded via `<script>` in every game's `index.html`:
 
 ```javascript
-// API surface
-JellyBolt.init(gameId)           // Initialize for this game
-JellyBolt.player.level           // Current level
-JellyBolt.player.xp              // Current XP
-JellyBolt.player.coins           // Coin balance
-JellyBolt.player.gems            // Gem balance
-JellyBolt.addXP(amount)          // Award XP (auto level-up)
-JellyBolt.addCoins(amount)       // Award coins
-JellyBolt.streak.current         // Current streak days
-JellyBolt.streak.check()         // Check/update streak
-JellyBolt.daily.getChallenge()   // Today's challenge for this game
-JellyBolt.daily.complete()       // Mark daily as done
-JellyBolt.achieve.unlock(id)     // Unlock achievement
-JellyBolt.achieve.list()         // All achievements + status
-JellyBolt.leaderboard.submit(score)  // Submit score
-JellyBolt.leaderboard.top(n)     // Get top N
-JellyBolt.ui.showGameOver(score) // Standardized game-over with hooks
-JellyBolt.ui.showLevelUp()       // Level-up celebration
-JellyBolt.ui.showAchievement(id) // Achievement toast
+// JellyBolt Core SDK — used by all 40+ games
+JellyBolt.init('dungeon-bolt')          // Initialize for this game
+JellyBolt.player.level                  // Current player level
+JellyBolt.player.xp                     // XP progress
+JellyBolt.player.coins                  // ⚡coin balance
+JellyBolt.player.gems                   // 💎 Gem balance
+JellyBolt.player.title                  // "⚡ Elite"
+JellyBolt.addXP(25)                     // Award XP (auto level-up + toast)
+JellyBolt.addCoins(10)                  // Award ⚡coins
+JellyBolt.streak.check()               // Update streak on game launch
+JellyBolt.daily.getChallenge()          // Today's challenge for this game
+JellyBolt.daily.complete()              // Mark daily done, award rewards
+JellyBolt.achieve.unlock('bolt-slayer') // Unlock achievement + toast
+JellyBolt.leaderboard.submit(1500)      // Submit score
+JellyBolt.ui.showGameOver(score)        // Branded game-over with all hooks
+JellyBolt.ui.showLevelUp()              // ⚡ Level-up celebration
 ```
 
-All data stored in `localStorage` with `jb_` prefix. No backend required.
+All data in `localStorage('jb_*')`. Works offline. No backend. No accounts.
 
 ---
 
-## 4. Implementation Priority — Ordered by Impact
+## 4. 💰 Monetization Strategy
 
-### Phase 1 — Immediate (Week 1-2) ⬅️ START HERE
-1. ✅ Create 3 standalone app scaffolds (Dungeon Bolt, Quest RPG, Escape Room)
-2. Build AABs for the 3 new standalone apps
-3. Upload all 3 to Play Console as internal testing
-4. Promote BrainRot Quiz + Code Conquest from internal → closed testing
+Aligned with our [Revenue Strategy](REVENUE_STRATEGY.md): ethical monetization, no pay-to-win.
 
-### Phase 2 — Addiction Framework (Week 3-4)
-5. Build `jellybolt-core.js` with: XP, coins, streaks, achievements
-6. Integrate into top 5 games (Dungeon Bolt, Quest RPG, BrainRot Quiz, Block Storm, Merge Master)
-7. Add standardized game-over screen with "one more round" hooks
-8. Roll out to remaining games
+### Current Revenue Streams
 
-### Phase 3 — More Standalones (Week 5-6)
-9. Create standalone apps for Block Storm, Merge Master, Battle Royale
-10. Create standalone apps for Tower Defense, Bubble Pop
-11. Upload all to Play Console
-12. Batch-promote to closed testing
+| Stream | Platform | Status | How It Works |
+|--------|----------|--------|-------------|
+| **Game Sales** | itch.io | ✅ Active | Free + PWYW ($1–$2) + Premium ($2.99 Dungeon Bolt) |
+| **Game Bundle** | Gumroad | ✅ Active | "JellyBolt Games Starter Pack" — all games downloadable |
+| **Tips** | Buy Me a Coffee | ⏳ Setup | buymeacoffee.com/jellyboltgames |
+| **Ad Revenue** | AdMob (in-app) | ✅ Integrated | Rewarded video ads for bonus ⚡coins |
+| **Ad Revenue** | AdSense (web) | ⏳ Pending | Landing page ad placements |
 
-### Phase 4 — Advanced Games (Week 7-10)
-13. Build Neon Drift (Three.js 3D racing)
-14. Build Phantom Arena (Phaser 3 action RPG)
-15. Build Star Colonies (BabylonJS strategy)
-16. Create standalone apps for each
-17. Add to collection app
+### Expansion Monetization Plan
 
-### Phase 5 — Polish & Growth (Week 11+)
-18. Leaderboard backend (Firebase/Supabase)
-19. Push notifications for daily challenges
-20. A/B test game-over screens for retention
-21. Play Store optimization (screenshots, descriptions)
-22. Consider IAP integration
+| Phase | Revenue Addition | Expected Impact |
+|-------|-----------------|----------------|
+| **Phase 1** | 3 new standalone apps on Play Store → more ad inventory | +30% ad impressions |
+| **Phase 2** | JellyBolt Core → longer sessions, daily returns | +50% DAU, +2x session length |
+| **Phase 3** | 5 more standalone apps → broader keyword coverage on Play Store | +100% organic installs |
+| **Phase 4** | Premium new-IP games (Neon Drift, Phantom Arena) | New $2.99+ pricing tier |
+| **Phase 5** | RevenueCat IAP → ⚡coin packs, 💎gem packs, ad-skip | First real IAP revenue |
+
+### Pricing by Distribution Channel
+
+| Channel | Free Games | Tip Games | Premium |
+|---------|-----------|-----------|---------|
+| **Play Store** | Free + ads | Free + ads | Free + ads (premium via IAP later) |
+| **itch.io** | $0 PWYW | $1–$2 PWYW | $2.99 fixed |
+| **Gumroad** | — | — | Bundle: $4.99 (all games) |
+| **Web** | Free (AdSense) | Free (AdSense) | Free (AdSense) |
+
+### What We Don't Do
+
+Per our [Revenue Strategy](REVENUE_STRATEGY.md):
+- ❌ No loot boxes with real money
+- ❌ No pay-to-win mechanics
+- ❌ No energy systems that block play
+- ❌ No aggressive push notifications
+- ❌ No data selling
+- ❌ No fake scarcity timers
 
 ---
 
-## 5. First 3 Standalone Apps — Built
+## 5. 📅 Implementation Roadmap
 
-### Directory Structure
+### ⚡ Phase 1 — Standalone Flagships (Week 1–2) `← WE ARE HERE`
 
-Each standalone app follows the proven pattern from `android-app-brainrot`:
+- [x] Created 3 standalone app scaffolds (Dungeon Bolt, Quest RPG, Escape Room)
+- [x] Built signed AABs (~1.8 MB each)
+- [ ] Create store listings (listing.md + metadata.json) for all 3
+- [ ] Generate feature graphics and icons in JellyBolt neon style
+- [ ] Upload AABs to Play Console as internal testing
+- [ ] Promote BrainRot Quiz + Code Conquest: internal → closed testing
+
+### ⚡ Phase 2 — JellyBolt Core SDK (Week 3–4)
+
+- [ ] Build `jellybolt-core.js` (XP, ⚡coins, streaks, achievements)
+- [ ] Design branded game-over overlay (neon style, bolt motif)
+- [ ] Integrate into Dungeon Bolt, Quest RPG, BrainRot Quiz first
+- [ ] Add "one more round" hooks to game-over flow
+- [ ] Roll out to all 40 games
+- [ ] Rebuild and re-upload all AABs with JellyBolt Core
+
+### ⚡ Phase 3 — Portfolio Expansion (Week 5–6)
+
+- [ ] Create standalone apps: Block Storm, Merge Master, Battle Royale
+- [ ] Create standalone apps: Tower Defense, Bubble Pop
+- [ ] Store listings + icons for all 5
+- [ ] Upload to Play Console → closed testing
+- [ ] Update itch.io pages with "Available on Google Play" badges
+- [ ] Gumroad bundle update: "40+ games"
+
+### ⚡ Phase 4 — Next-Gen Games (Week 7–10)
+
+- [ ] Build Neon Drift (Three.js racing)
+- [ ] Build Phantom Arena (Phaser 3 action RPG)
+- [ ] Build Star Colonies (BabylonJS strategy)
+- [ ] Standalone apps for each + store listings
+- [ ] Add to JellyBolt Collection app
+- [ ] itch.io + Gumroad listings for new games
+
+### ⚡ Phase 5 — Growth & Revenue (Week 11+)
+
+- [ ] Firebase leaderboard backend → cloud leaderboards
+- [ ] Push notifications for daily challenges
+- [ ] RevenueCat integration → ⚡coin packs, ad-skip
+- [ ] A/B test game-over screens for retention
+- [ ] Play Store ASO optimization (screenshots, A/B test descriptions)
+- [ ] Cross-promote: TechAI Explained → JellyBolt dev logs
+
+---
+
+## 6. 🏗️ First 3 Standalone Apps — Technical Details
+
+### App Structure
+
+Each standalone follows the proven WebView wrapper pattern. Single activity, fullscreen, offline-capable:
 
 ```
 android-app-{game}/
-├── build.gradle                    # AGP 8.2.0
-├── settings.gradle                 # rootProject.name
-├── gradle.properties               # JVM args, AndroidX
-├── gradlew / gradlew.bat           # Gradle 8.2 wrapper
+├── build.gradle                       # AGP 8.2.0
+├── settings.gradle                    # rootProject.name
+├── gradle.properties                  # AndroidX, JVM args
+├── gradlew / gradlew.bat              # Gradle 8.2
 ├── gradle/wrapper/
 │   └── gradle-wrapper.properties
 └── app/
-    ├── build.gradle                # applicationId, signing, deps
+    ├── build.gradle                   # com.jellybolt.{id}, SDK 35
     └── src/main/
-        ├── AndroidManifest.xml     # Single-activity, fullscreen
+        ├── AndroidManifest.xml        # Single fullscreen activity
         ├── java/com/jellybolt/{id}/
-        │   └── GameActivity.java   # WebView wrapper
+        │   └── GameActivity.java      # WebView → file:///android_asset/
         └── assets/games/
-            ├── {game-folder}/      # Game files
-            │   └── index.html
+            ├── {game-folder}/
+            │   └── index.html         # The game itself
             └── shared/
-                ├── ads.js
-                ├── monetization.js
-                └── games-menu.html
+                ├── ads.js             # AdMob integration
+                ├── monetization.js    # Support links, cross-promo
+                └── games-menu.html    # Back-to-collection link
 ```
 
-### Apps Created
+### Built Apps
 
-| App | Directory | Package | Game Bundled |
-|-----|-----------|---------|-------------|
-| Dungeon Bolt | `android-app-dungeonbolt/` | `com.jellybolt.dungeonbolt` | `games/dungeon-bolt/` |
-| Quest RPG | `android-app-questrpg/` | `com.jellybolt.questrpg` | `games/quest-rpg/` |
-| Escape Room | `android-app-escaperoom/` | `com.jellybolt.escaperoom` | `games/escape-room/` |
+| App | Directory | Package | AAB Size |
+|-----|-----------|---------|---------|
+| ⚔️ Dungeon Bolt | `android-app-dungeonbolt/` | `com.jellybolt.dungeonbolt` | 1,866 KB |
+| 🗡️ Quest RPG | `android-app-questrpg/` | `com.jellybolt.questrpg` | 1,870 KB |
+| 🔐 Escape Room | `android-app-escaperoom/` | `com.jellybolt.escaperoom` | 1,867 KB |
 
-### Build Instructions
+### Build Command
 
 ```bash
-# For each app:
 cd android-app-dungeonbolt
-# Ensure ANDROID_HOME is set and keystore is in place
 cp /path/to/jellybolt-release.keystore .
 ./gradlew bundleRelease
-# AAB output: app/build/outputs/bundle/release/app-release.aab
+# → app/build/outputs/bundle/release/app-release.aab
 ```
 
-> **Note:** The keystore (`jellybolt-release.keystore`) is NOT in the repo (correctly).
-> It must be copied to each `android-app-*/` directory before building.
-> In CI/CD, use GitHub Actions secrets for signing credentials.
+> ⚠️ Keystore is gitignored. In CI/CD, pull from GitHub Actions secrets.
 
 ---
 
-## Appendix A: All Package Names
+## Appendix A: Complete Package Registry
 
-| App | Package Name | Status |
-|-----|-------------|--------|
-| JellyBolt Games Collection | `com.jellybolt.games` | Play Console ✅ |
-| BrainRot Quiz Battle | `com.jellybolt.brainrotquiz` | Play Console ✅ |
-| Code Conquest | `com.jellybolt.codeconquest` | Play Console ✅ |
-| Dungeon Bolt | `com.jellybolt.dungeonbolt` | **NEW** — built |
-| Quest RPG | `com.jellybolt.questrpg` | **NEW** — built |
-| Escape Room | `com.jellybolt.escaperoom` | **NEW** — built |
-| Block Storm | `com.jellybolt.blockstorm` | Planned Phase 3 |
-| Merge Master | `com.jellybolt.mergemaster` | Planned Phase 3 |
-| Battle Royale | `com.jellybolt.battleroyale` | Planned Phase 3 |
-| Tower Defense | `com.jellybolt.towerdefense` | Planned Phase 3 |
-| Bubble Pop | `com.jellybolt.bubblepop` | Planned Phase 3 |
+| # | App Title | Package | Play Store | itch.io |
+|---|-----------|---------|-----------|---------|
+| 1 | JellyBolt Games - Arcade Collection | `com.jellybolt.games` | ✅ Closed testing | — |
+| 2 | BrainRot Quiz Battle | `com.jellybolt.brainrotquiz` | ✅ Internal | ✅ Published |
+| 3 | Code Conquest | `com.jellybolt.codeconquest` | ✅ Internal | ✅ Published |
+| 4 | Dungeon Bolt | `com.jellybolt.dungeonbolt` | 🆕 AAB ready | ✅ Published |
+| 5 | Quest RPG | `com.jellybolt.questrpg` | 🆕 AAB ready | — |
+| 6 | Escape Room | `com.jellybolt.escaperoom` | 🆕 AAB ready | — |
+| 7 | Block Storm | `com.jellybolt.blockstorm` | 📋 Phase 3 | — |
+| 8 | Merge Master | `com.jellybolt.mergemaster` | 📋 Phase 3 | — |
+| 9 | Battle Royale | `com.jellybolt.battleroyale` | 📋 Phase 3 | — |
+| 10 | Tower Defense | `com.jellybolt.towerdefense` | 📋 Phase 3 | — |
+| 11 | Bubble Pop | `com.jellybolt.bubblepop` | 📋 Phase 3 | — |
+| 12 | Neon Drift | `com.jellybolt.neondrift` | 📋 Phase 4 | — |
+| 13 | Phantom Arena | `com.jellybolt.phantomarena` | 📋 Phase 4 | — |
+| 14 | Star Colonies | `com.jellybolt.starcolonies` | 📋 Phase 4 | — |
 
-## Appendix B: Why NOT Unity/Godot for WebView
+## Appendix B: Why NOT Unity/Godot
 
-1. **WASM overhead**: Unity WebGL builds include a ~15 MB runtime. Godot is ~5 MB. Our current games are 7-65 KB each.
-2. **WebView ≠ Chrome**: Android WebView lacks features desktop Chrome has (SharedArrayBuffer, full WebGL2, Web Workers with WASM). Unity WebGL frequently fails.
-3. **Startup time**: WASM compilation takes 3-10 seconds on mobile. Our games load instantly.
-4. **Memory**: WASM games use 100-300 MB RAM. WebView gives limited memory to web content.
-5. **Device compatibility**: Low-end Android devices (which make up significant Play Store downloads) can't handle heavy WebGL.
-6. **If you need native quality**: Skip WebView entirely, build native Android games with Unity/Godot. But that's a different product.
+Our brand promise is **instant play**. WASM engines destroy that:
+
+| Factor | Our JS Games | Unity WebGL | Godot HTML5 |
+|--------|-------------|-------------|-------------|
+| Load time | **< 100ms** | 3–10 seconds | 1–5 seconds |
+| Game size | 7–65 KB | 15–50 MB | 5–15 MB |
+| APK size | ~1.8 MB | ~20 MB+ | ~10 MB+ |
+| RAM usage | 5–20 MB | 100–300 MB | 50–150 MB |
+| Low-end devices | ✅ Works everywhere | ❌ Crashes on cheap phones | ⚠️ Laggy |
+| WebView compat | ✅ Perfect | ❌ SharedArrayBuffer issues | ⚠️ WebGL1 only |
+
+If we ever need AAA-quality native games, we'd build native Android apps — not WebView+WASM hybrids. For now, JavaScript IS our competitive moat.
 
 ---
 
-<sub>⚡ Built by JellyBolt Games — Fun hits different</sub>
+<div align="center">
+
+```
+⚡ JellyBolt Games — Fun hits different. ⚡
+```
+
+*Built with lightning. Played with thunder.*
+
+</div>
