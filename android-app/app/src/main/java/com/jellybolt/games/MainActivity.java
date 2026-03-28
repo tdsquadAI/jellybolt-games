@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String BASE_URL = "https://jellybolt-games.github.io/jellybolt-games/games/";
+    private static final String BASE_URL = "file:///android_asset/games/";
 
     private static final String[][] GAMES = {
         {"neon-snake", "Neon Snake", "\uD83D\uDC0D", "Classic Snake"},
@@ -40,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
         {"tower-stack", "Tower Stack", "\uD83D\uDDFC", "Stacking"},
         {"typing-blitz", "Typing Blitz", "⌨\uFE0F", "Speed Typing"},
         {"word-rush", "Word Rush", "\uD83D\uDCDD", "Word Game"},
+        {"archery-quest", "Archery Quest", "\uD83C\uDFF9", "Archery"},
+        {"battle-arena", "Battle Arena", "\uD83E\uDD3C", "Fighting"},
+        {"battle-royale", "Battle Royale", "\uD83D\uDCA5", "Battle Royale"},
+        {"block-storm", "Block Storm", "\uD83E\uDDF1", "Tetris-like"},
+        {"bubble-pop", "Bubble Pop", "\uD83E\uDEE7", "Bubble Shooter"},
+        {"crystal-caves", "Crystal Caves", "\uD83D\uDC8E", "Adventure"},
+        {"dungeon-crawler", "Dungeon Crawler", "\uD83D\uDDFA\uFE0F", "Dungeon RPG"},
+        {"escape-room", "Escape Room", "\uD83D\uDD13", "Escape"},
+        {"merge-master", "Merge Master", "\uD83E\uDDE9", "Merge"},
+        {"quest-rpg", "Quest RPG", "\uD83D\uDDE1\uFE0F", "RPG"},
+        {"racing-3d", "Racing 3D", "\uD83C\uDFCE\uFE0F", "Racing"},
+        {"sniper-elite", "Sniper Elite", "\uD83C\uDFAF", "Shooter"},
+        {"space-jump", "Space Jump", "\uD83D\uDE80", "Endless Runner"},
+        {"space-shooter-3d", "Space Shooter 3D", "\uD83D\uDE80", "3D Shooter"},
+        {"tower-defense", "Tower Defense", "\uD83C\uDFF0", "Tower Defense"},
+        {"zombie-shooter", "Zombie Shooter", "\uD83E\uDDDF", "Shooter"},
     };
 
     @Override
