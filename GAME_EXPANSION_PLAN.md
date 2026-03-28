@@ -18,9 +18,9 @@
 
 ## 🎯 Studio Vision
 
-JellyBolt Games is an indie studio building **instant-play mobile games** — lightweight, addictive, beautifully neon. Every game loads in under a second, plays offline, and looks like it was dipped in liquid lightning.
+JellyBolt Games is an indie **app publisher** — games AND utilities. We build **instant-play mobile games** and **lightweight utility tools**, all under the same neon-lit brand. Every app loads in under a second, looks like it was dipped in liquid lightning, and earns ad revenue while it sleeps.
 
-This roadmap takes us from **3 Play Store apps** to a **full indie game studio portfolio** of 11+ titles, unified by a shared progression system that keeps players coming back across the entire JellyBolt ecosystem.
+This roadmap takes us from **3 Play Store apps** to a **full publisher portfolio** of 20+ titles — games for engagement, utilities for steady passive ad income.
 
 ### Brand DNA
 
@@ -348,7 +348,119 @@ Per our [Revenue Strategy](REVENUE_STRATEGY.md):
 
 ---
 
-## 5. 📅 Implementation Roadmap
+## 5. 🔧 Utility Apps Line — Passive Ad Revenue
+
+### The Strategy
+
+Games drive engagement. Utilities drive **steady, predictable ad revenue**.
+
+Every utility app is a separate Play Store listing under the "JellyBolt Games" publisher. They're fast to build (HTML5 WebView or lightweight native), solve a real problem, and monetize through banner + interstitial ads. A user who opens a calculator 5 times a day is 5 ad impressions a day, 365 days a year — without us building any new content.
+
+### Why This Works for JellyBolt
+
+| Factor | Games | Utilities |
+|--------|-------|-----------|
+| **User sessions** | 1–3/day, 5–15 min each | 3–10/day, 30 sec–2 min each |
+| **Retention** | Needs constant content updates | "Set and forget" — user keeps the app forever |
+| **Ad revenue model** | Rewarded video (higher CPM, lower volume) | Banner + interstitial (lower CPM, MUCH higher volume) |
+| **Build effort** | Medium–High (game design, balance, art) | Low (standard UI, solved problems) |
+| **Competition** | High (millions of games) | High but **discoverable** (utility keywords are high-intent search) |
+| **Cross-promotion** | Utility users → see JellyBolt games in ads | Game users → see utility apps in "More by JellyBolt" |
+
+### Utility App Portfolio
+
+#### 🥇 Tier 1 — Ship First (Highest ROI, Fastest Build)
+
+| # | App Name | Package | Category | Build Method | Ad Strategy | Why First |
+|---|----------|---------|----------|-------------|-------------|-----------|
+| 1 | **⚡ Bolt Calculator** | `com.jellybolt.calculator` | `TOOLS` | WebView (HTML/CSS/JS) | Banner (bottom) + interstitial on mode switch | Everyone needs a calculator. ASO gold. 2-day build. |
+| 2 | **⚡ Bolt QR** | `com.jellybolt.qrscanner` | `TOOLS` | Native (CameraX + ZXing) | Interstitial after each scan + banner | QR scanning = daily use. Camera permission = native build needed. |
+| 3 | **⚡ Bolt Timer** | `com.jellybolt.timer` | `TOOLS` | WebView (HTML/CSS/JS) | Banner (bottom) + reward video for custom sounds | Timer/stopwatch/countdown. Gym, cooking, studying. Multiple sessions/day. |
+
+#### 🥈 Tier 2 — Ship Second (Strong Utility, Moderate Effort)
+
+| # | App Name | Package | Category | Build Method | Ad Strategy | Why |
+|---|----------|---------|----------|-------------|-------------|-----|
+| 4 | **⚡ Bolt Notes** | `com.jellybolt.notes` | `PRODUCTIVITY` | WebView (localStorage) | Banner + interstitial every 5th note open | Sticky utility. Users who adopt a notes app KEEP it. |
+| 5 | **⚡ Bolt Convert** | `com.jellybolt.converter` | `TOOLS` | WebView (HTML/CSS/JS) | Banner + interstitial on category switch | Unit converter (length, weight, temp, currency). High search volume. |
+| 6 | **⚡ Bolt Compass** | `com.jellybolt.compass` | `TOOLS` | Native (sensors) | Banner + interstitial on close | Compass + level + flashlight. Uses device sensors = native. |
+
+#### 🥉 Tier 3 — Ship Third (Niche, Higher Effort)
+
+| # | App Name | Package | Category | Build Method | Ad Strategy | Why |
+|---|----------|---------|----------|-------------|-------------|-----|
+| 7 | **⚡ Bolt WiFi** | `com.jellybolt.wifianalyzer` | `TOOLS` | Native (WiFi APIs) | Banner + interstitial | WiFi analyzer. Niche but dedicated audience. Requires native APIs. |
+| 8 | **⚡ Bolt Weather** | `com.jellybolt.weather` | `WEATHER` | WebView + API | Banner + interstitial | Weather widget. Needs API key (OpenWeatherMap free tier). |
+| 9 | **⚡ Bolt Files** | `com.jellybolt.filemanager` | `TOOLS` | Native (Storage APIs) | Banner + interstitial | File manager lite. Complex permissions but high retention. |
+| 10 | **⚡ Bolt Battery** | `com.jellybolt.battery` | `TOOLS` | Native (BatteryManager) | Banner + notification ads | Battery stats widget. Ongoing background presence = constant impressions. |
+
+### Naming Convention
+
+All utility apps follow the **"Bolt [Function]"** pattern:
+- **Bolt Calculator**, **Bolt QR**, **Bolt Timer**, **Bolt Notes**, etc.
+- Publisher remains "JellyBolt Games" on Play Store
+- Package: `com.jellybolt.{function}`
+- Icon: ⚡ bolt motif + function-specific icon element (e.g., bolt + magnifying glass for QR)
+
+### Utility App Tech Stack
+
+| Approach | When to Use | Examples |
+|----------|-------------|---------|
+| **WebView (reuse game wrapper)** | No hardware APIs needed. Pure UI + logic. | Calculator, Timer, Notes, Unit Converter |
+| **Native Android (Java/Kotlin)** | Needs camera, sensors, WiFi, filesystem | QR Scanner, Compass, WiFi Analyzer, File Manager |
+| **WebView + Native bridge** | Mostly UI but one native feature | Weather (API call), Battery (BatteryManager) |
+
+WebView utility apps reuse the exact same `GameActivity.java` WebView wrapper from our game apps — just point it at a different HTML file. Same build system, same signing, same CI/CD pipeline. Ship in hours.
+
+### Visual Design — JellyBolt Utility Style
+
+Utilities get the JellyBolt neon treatment but with a **functional twist**:
+
+```
+┌──────────────────────────────────────┐
+│ ⚡ Bolt Calculator                   │
+│ ──────────────────────────────────── │
+│                                      │
+│           1,234.56                   │  ← White text on dark (#050510)
+│                                      │
+│  ┌────┬────┬────┬────┐              │
+│  │ 7  │ 8  │ 9  │ ÷  │              │  ← Dark cards (#0d0d24)
+│  ├────┼────┼────┼────┤              │     with neon green borders
+│  │ 4  │ 5  │ 6  │ ×  │              │
+│  ├────┼────┼────┼────┤              │
+│  │ 1  │ 2  │ 3  │ −  │              │
+│  ├────┼────┼────┼────┤              │
+│  │ 0  │ .  │ =  │ +  │              │  ← = button: neon green (#00ff88)
+│  └────┴────┴────┴────┘              │
+│                                      │
+│ ┌──────────────────────────────────┐ │
+│ │           [ Ad Banner ]          │ │  ← AdMob banner
+│ └──────────────────────────────────┘ │
+└──────────────────────────────────────┘
+```
+
+- Dark background (`#050510`) — same as games
+- Neon green accents (`#00ff88`) — primary action buttons
+- Electric cyan (`#58a6ff`) — secondary actions
+- Functional first, beautiful second — utilities must feel fast and reliable
+- ⚡ bolt icon in app bar
+
+### Revenue Projections — Utility Apps
+
+| Metric | Per Utility App (Month 6) | 10 Utility Apps Combined |
+|--------|--------------------------|--------------------------|
+| Daily Active Users | 500–2,000 | 5,000–20,000 |
+| Sessions/day/user | 3–5 | 3–5 |
+| Ad impressions/day | 1,500–10,000 | 15,000–100,000 |
+| eCPM (banner) | $1–3 | $1–3 |
+| eCPM (interstitial) | $5–15 | $5–15 |
+| **Monthly revenue** | **$50–300** | **$500–3,000** |
+
+Not game-changing individually, but **extremely low effort to maintain** once built. And every utility app cross-promotes the games.
+
+---
+
+## 6. 📅 Implementation Roadmap
 
 ### ⚡ Phase 1 — Standalone Flagships (Week 1–2) `← WE ARE HERE`
 
@@ -377,6 +489,15 @@ Per our [Revenue Strategy](REVENUE_STRATEGY.md):
 - [ ] Update itch.io pages with "Available on Google Play" badges
 - [ ] Gumroad bundle update: "40+ games"
 
+### ⚡ Phase 3B — Utility Apps Wave 1 (Week 5–6, parallel with Phase 3)
+
+- [ ] Build Bolt Calculator (WebView — reuse game wrapper)
+- [ ] Build Bolt Timer (WebView — stopwatch, countdown, intervals)
+- [ ] Build Bolt Convert (WebView — unit/currency converter)
+- [ ] AdMob integration for all 3 (banner + interstitial)
+- [ ] Store listings + neon-dark icons
+- [ ] Upload to Play Console → internal testing
+
 ### ⚡ Phase 4 — Next-Gen Games (Week 7–10)
 
 - [ ] Build Neon Drift (Three.js racing)
@@ -386,6 +507,14 @@ Per our [Revenue Strategy](REVENUE_STRATEGY.md):
 - [ ] Add to JellyBolt Collection app
 - [ ] itch.io + Gumroad listings for new games
 
+### ⚡ Phase 4B — Utility Apps Wave 2 (Week 7–10, parallel with Phase 4)
+
+- [ ] Build Bolt QR (Native — CameraX + ZXing library)
+- [ ] Build Bolt Notes (WebView — localStorage-backed)
+- [ ] Build Bolt Compass (Native — sensor APIs, includes level + flashlight)
+- [ ] AdMob integration + store listings
+- [ ] Upload to Play Console
+
 ### ⚡ Phase 5 — Growth & Revenue (Week 11+)
 
 - [ ] Firebase leaderboard backend → cloud leaderboards
@@ -394,10 +523,11 @@ Per our [Revenue Strategy](REVENUE_STRATEGY.md):
 - [ ] A/B test game-over screens for retention
 - [ ] Play Store ASO optimization (screenshots, A/B test descriptions)
 - [ ] Cross-promote: TechAI Explained → JellyBolt dev logs
+- [ ] Utility apps Wave 3: Bolt WiFi, Bolt Weather, Bolt Files, Bolt Battery
 
 ---
 
-## 6. 🏗️ First 3 Standalone Apps — Technical Details
+## 7. 🏗️ First 3 Standalone Apps — Technical Details
 
 ### App Structure
 
@@ -465,6 +595,17 @@ cp /path/to/jellybolt-release.keystore .
 | 12 | Neon Drift | `com.jellybolt.neondrift` | 📋 Phase 4 | — |
 | 13 | Phantom Arena | `com.jellybolt.phantomarena` | 📋 Phase 4 | — |
 | 14 | Star Colonies | `com.jellybolt.starcolonies` | 📋 Phase 4 | — |
+| | **── Utility Apps ──** | | | |
+| 15 | ⚡ Bolt Calculator | `com.jellybolt.calculator` | 📋 Phase 3B | — |
+| 16 | ⚡ Bolt Timer | `com.jellybolt.timer` | 📋 Phase 3B | — |
+| 17 | ⚡ Bolt Convert | `com.jellybolt.converter` | 📋 Phase 3B | — |
+| 18 | ⚡ Bolt QR | `com.jellybolt.qrscanner` | 📋 Phase 4B | — |
+| 19 | ⚡ Bolt Notes | `com.jellybolt.notes` | 📋 Phase 4B | — |
+| 20 | ⚡ Bolt Compass | `com.jellybolt.compass` | 📋 Phase 4B | — |
+| 21 | ⚡ Bolt WiFi | `com.jellybolt.wifianalyzer` | 📋 Phase 5 | — |
+| 22 | ⚡ Bolt Weather | `com.jellybolt.weather` | 📋 Phase 5 | — |
+| 23 | ⚡ Bolt Files | `com.jellybolt.filemanager` | 📋 Phase 5 | — |
+| 24 | ⚡ Bolt Battery | `com.jellybolt.battery` | 📋 Phase 5 | — |
 
 ## Appendix B: Why NOT Unity/Godot
 
