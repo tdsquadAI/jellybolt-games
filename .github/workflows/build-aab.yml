@@ -25,21 +25,22 @@ jobs:
 
       - name: Decode keystore
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > jellybolt-release.keystore
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > jellybolt-release.keystore
 
       - name: Build TWA AAB
-        working-directory: android-app
+        working-directory: ${{ inputs.game == 'all' && 'android-app' || format('android-app/{0}', inputs.game) }}
         run: |
           chmod +x gradlew
           ./gradlew bundleRelease \
             -Pandroid.injected.signing.store.file=${{ github.workspace }}/jellybolt-release.keystore \
-            -Pandroid.injected.signing.store.password=${{ secrets.KEYSTORE_PASSWORD }} \
-            -Pandroid.injected.signing.key.alias=${{ secrets.KEY_ALIAS }} \
-            -Pandroid.injected.signing.key.password=${{ secrets.KEY_PASSWORD }}
+            -Pandroid.injected.signing.store.password=${{ secrets.ANDROID_KEYSTORE_PASSWORD }} \
+            -Pandroid.injected.signing.key.alias=${{ secrets.ANDROID_KEY_ALIAS }} \
+            -Pandroid.injected.signing.key.password=${{ secrets.ANDROID_KEY_PASSWORD }}
 
       - name: Upload AAB artifact
         uses: actions/upload-artifact@v4
         with:
-          name: jellybolt-release-aab
-          path: android-app/app/build/outputs/bundle/release/*.aab
+          name: jellybolt-release-aab-${{ inputs.game }}
+          path: ${{ inputs.game == 'all' && 'android-app' || format('android-app/{0}', inputs.game) }}/app/build/outputs/bundle/release/*.aab
           retention-days: 30
+

@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Backend Stack
 - **Platform:** Supabase
@@ -30,3 +30,4 @@ Owner: Tamir Dresher
 - **Multiplayer readiness:** Supabase Realtime enables features like Quiz Battle leaderboards
 - **Key decisions made:** Supabase free tier for MVP, row-level security (RLS) on all tables, anonymous auth for frictionless onboarding
 - **Monetization backend:** RevenueCat free tier until $2,500/month tracked revenue, then 1% commission
+

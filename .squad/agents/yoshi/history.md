@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Design Principles
 - Kid-friendly: Bright colors, clear icons, no dark patterns
@@ -28,3 +28,4 @@ Owner: Tamir Dresher
 - **Mobile UI design:** Pending — will design React Native interfaces when mobile development begins
 - **Store optimization:** App Store Optimization (ASO) for itch.io already in progress; screenshots A/B tested
 - **Design tools:** Figma, Aseprite, AI generation (for rapid prototyping only)
+

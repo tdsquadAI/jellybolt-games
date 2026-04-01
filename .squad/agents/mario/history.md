@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Studio Portfolio
 1. **BrainRot Quiz Battle** — Trivia game (in development)
@@ -33,3 +33,4 @@ Owner: Tamir Dresher
 - **Shared infrastructure:** monetization.js, games-menu.html, ads.js modules for cross-game consistency
 - **Distribution:** GitHub Pages (org + personal), YouTube (12 videos), Gumroad, Amazon Associates (tag: jellybolt-20)
 - **Next phase:** Upload 9 pending games, launch Android versions via React Native, establish revenue from cosmetics/battle passes
+

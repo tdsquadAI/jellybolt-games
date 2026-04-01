@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Tech Stack
 - **Framework:** React Native + Expo
@@ -27,3 +27,4 @@ Owner: Tamir Dresher
 - **Performance targets:** 60 FPS on low-end Android devices, <50 MB per app, <3 second cold start
 - **Build infrastructure:** GitHub Actions CI/CD already configured (ci.yml, pages-deploy.yml)
 - **Next technical priorities:** Migrate first game (Bounce Blitz) to React Native, establish EAS Build pipeline, test on Android devices, implement RevenueCat billing in mobile version
+

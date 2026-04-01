@@ -10,16 +10,16 @@ android {
         applicationId "com.jellybolt.games"
         minSdk 24
         targetSdk 35
-        versionCode 4
-        versionName "1.3.0"
+        versionCode 5
+        versionName "1.4.0"
     }
 
     signingConfigs {
         release {
             storeFile file('../jellybolt-release.keystore')
-            storePassword 'jellybolt2024'
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: project.findProperty("keystorePassword") ?: ""
             keyAlias 'jellybolt'
-            keyPassword 'jellybolt2024'
+            keyPassword System.getenv("KEYSTORE_PASSWORD") ?: project.findProperty("keystorePassword") ?: ""
         }
     }
 
