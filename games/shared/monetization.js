@@ -15,15 +15,22 @@ const GAMES=[
 {id:'card-clash',name:'Card Clash',emoji:'🃏',genre:'Card Battle'},
 {id:'code-conquest',name:'Code Conquest',emoji:'💻',genre:'Strategy'},
 {id:'dungeon-bolt',name:'Dungeon Bolt',emoji:'⚔️',genre:'Roguelike'},
+{id:'escape-room',name:'Escape Room',emoji:'🔐',genre:'Puzzle Adventure'},
 {id:'gravity-dash',name:'Gravity Dash',emoji:'🌀',genre:'Platformer'},
 {id:'hex-match',name:'Hex Match',emoji:'🔷',genre:'Puzzle'},
 {id:'light-trail',name:'Light Trail',emoji:'💡',genre:'Arcade'},
 {id:'memory-matrix',name:'Memory Matrix',emoji:'🧩',genre:'Memory'},
+{id:'merge-master',name:'Merge Master',emoji:'🏆',genre:'Merge Puzzle'},
 {id:'neon-snake',name:'Neon Snake',emoji:'🐍',genre:'Classic'},
 {id:'pixel-tower',name:'Pixel Tower',emoji:'🏗️',genre:'Stacking'},
 {id:'rhythm-tap',name:'Rhythm Tap',emoji:'🎵',genre:'Rhythm'},
 {id:'space-trader',name:'Space Trader',emoji:'🛸',genre:'Trading'},
-{id:'word-rush',name:'Word Rush',emoji:'⌨️',genre:'Typing'}
+{id:'word-rush',name:'Word Rush',emoji:'⌨️',genre:'Typing'},
+{id:'bolt-blocks',name:'Bolt Blocks',emoji:'🧱',genre:'Block Puzzle'},
+{id:'bolt-solitaire',name:'Bolt Solitaire',emoji:'🃏',genre:'Card Game'},
+{id:'neon-dash',name:'Neon Dash',emoji:'💨',genre:'Endless Runner'},
+{id:'territory-bolt',name:'Territory Bolt',emoji:'🗺️',genre:'Territory'},
+{id:'bolt-tiles',name:'Bolt Tiles',emoji:'🀄',genre:'Mahjong'}
 ];
 
 /* ── Detect current game ── */

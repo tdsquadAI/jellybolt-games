@@ -19,8 +19,9 @@
     }
   },
   "adsense": {
-    "publisher_id": "ca-pub-PLACEHOLDER",
-    "status": "pending_signup"
+    "publisher_id": "",
+    "status": "not_configured",
+    "notes": "No real publisher ID yet. Sign up at adsense.google.com to get a ca-pub-XXXXXXXXXXXXXXXX ID, then update this file and replace the ad slots in games/shared/ads.js."
   },
   "gumroad": {
     "store_url": "https://tdsquad.gumroad.com",

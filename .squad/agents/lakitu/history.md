@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Monitored Repos
 1. jellybolt-games (studio repo)
@@ -19,3 +19,4 @@ Owner: Tamir Dresher
 
 ## Learnings
 (initialized — no learnings yet)
+

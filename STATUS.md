@@ -1,9 +1,9 @@
 # JellyBolt Games — Project Status
-Last updated: 2026-03-21
+Last updated: 2026-04-01
 
 ## Brand Identity
 - **Name:** JellyBolt Games (JellyBolt⚡)
-- **NEVER mention "Tamir Dresher"** — independent brand
+- **NEVER mention "real owner identity"** — independent brand
 - **Landing page:** `index.html` — 24-game responsive site with affiliate gear section
 - **GitHub Pages:** https://jellybolt-games.github.io/jellybolt-games/
 - **itch.io:** jellyboltgames.itch.io
@@ -11,7 +11,7 @@ Last updated: 2026-03-21
 - **Contact:** tdsquadai@gmail.com
 - **Gumroad:** tdsquad.gumroad.com (Game Bundle $4.99)
 
-## Games (25 total)
+## Games (45 total)
 All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 
 ### Published on itch.io (16)
@@ -32,7 +32,7 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 15. **Space Trader** 🛸 — Trading sim (free)
 16. **Word Rush** ⌨️ — Typing game (free)
 
-### Built, pending itch.io upload (9 new)
+### Built, pending itch.io upload (29 new)
 17. **Color Match** 🎨 — Puzzle (free)
 18. **Cube Runner** 🧊 — 3D Runner (free)
 19. **Maze Runner** 🏃 — Maze navigation (free)
@@ -42,6 +42,26 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 23. **Tower Stack** 🏰 — Stacking (free)
 24. **Typing Blitz** 💨 — Typing speed (free)
 25. **Dungeon Crawler Classic** - Tile-based dungeon crawler with fog of war (free)
+26. **Archery Quest** 🏹 — Precision archery arcade (free)
+27. **Battle Arena** ⚔️ — Arena combat action (free)
+28. **Battle Royale** 🎖️ — Last-player-standing battle (free)
+29. **Block Storm** 🌊 — Block-clearing storm (free)
+30. **Bolt Blocks** ⚡ — Lightning-fast block puzzle (free)
+31. **Bolt Solitaire** 🃏 — Solitaire with a bolt twist (free)
+32. **Bolt Tiles** 🔲 — Tile-matching puzzle (free)
+33. **Bubble Pop** 🫧 — Classic bubble shooting (free)
+34. **Crystal Caves** 💎 — Cave exploration adventure (free)
+35. **Escape Room** 🔐 — Puzzle adventure with 5 rooms (free)
+36. **Merge Master** 🔀 — Merge number puzzle (free)
+37. **Neon Dash** 💨 — Neon-lit endless runner (free)
+38. **Quest RPG** ⚔️ — Lightweight RPG quest (free)
+39. **Racing 3D** 🏎️ — 3D racing action (free)
+40. **Sniper Elite** 🎯 — Precision sniper challenge (free)
+41. **Space Jump** 🚀 — Gravity-defying space platformer (free)
+42. **Space Shooter 3D** 🚀 — First-person 3D space combat (free)
+43. **Territory Bolt** ⚡ — Territory control strategy (free)
+44. **Tower Defense** 🏰 — Classic tower defense (free)
+45. **Zombie Shooter** 🧟 — Wave-based zombie survival (free)
 
 ### Shared Assets
 - `games/shared/monetization.js` (16.8 KB) — Global monetization module

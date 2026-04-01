@@ -3,7 +3,7 @@
 ## Project Context
 JellyBolt Games — Free mobile games studio for kids & teens.
 Stack: React Native, Expo, TypeScript, Supabase
-Owner: Tamir Dresher
+Owner: tdsquadAI Team
 
 ## Decision Log Format
 ```
@@ -24,3 +24,4 @@ Owner: Tamir Dresher
 
 ## Learnings
 (initialized — no learnings yet)
+
