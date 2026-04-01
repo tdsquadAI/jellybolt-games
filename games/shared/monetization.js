@@ -20,6 +20,7 @@ const GAMES=[
 {id:'hex-match',name:'Hex Match',emoji:'🔷',genre:'Puzzle'},
 {id:'light-trail',name:'Light Trail',emoji:'💡',genre:'Arcade'},
 {id:'memory-matrix',name:'Memory Matrix',emoji:'🧩',genre:'Memory'},
+{id:'merge-master',name:'Merge Master',emoji:'🏆',genre:'Merge Puzzle'},
 {id:'neon-snake',name:'Neon Snake',emoji:'🐍',genre:'Classic'},
 {id:'pixel-tower',name:'Pixel Tower',emoji:'🏗️',genre:'Stacking'},
 {id:'rhythm-tap',name:'Rhythm Tap',emoji:'🎵',genre:'Rhythm'},
