@@ -38,7 +38,7 @@ Cross-game issues go to the studio repo (jellybolt-games).
 
 ## HQ Upstream Connection
 
-**Parent Squad:** tamirdresher_microsoft/tamresearch1 (Production HQ)
+**Parent Squad:** tdsquadai/tamresearch1 (Production HQ)
 **Escalation Label:** `jellybolt-games`
 
 ### When to Escalate to HQ
@@ -49,12 +49,12 @@ Cross-game issues go to the studio repo (jellybolt-games).
 - Revenue milestones or partnership opportunities
 
 ### How to Escalate
-1. Create issue in `tamirdresher_microsoft/tamresearch1`
+1. Create issue in `tdsquadai/tamresearch1`
 2. Add label `jellybolt-games`
 3. Reference the local issue number
 4. HQ Ralph will detect and route to Picard
 
 ### Shared Resources
-- **Squad Skills Repo:** tamirdresher/squad-skills
-- **Squad Brain:** tamirdresher_microsoft/squad-brain
+- **Squad Skills Repo:** tdsquadai/squad-skills
+- **Squad Brain:** tdsquadai/squad-brain
 - **Daily Reports:** Send via Teams webhook (see ~/.squad/teams-webhook.url)

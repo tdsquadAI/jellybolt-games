@@ -1,5 +1,5 @@
 Write-Host '🚀 TechAI Explained HQ Squad' -ForegroundColor Blue
-Set-Location 'C:\Users\tamirdresher\source\repos\techai-explained'
+Set-Location 'C:\Users\tdsquadai\source\repos\techai-explained'
 gh issue list --repo techai-explained/techai-explained --state open --limit 5 2>$null
 Write-Host ''
 Write-Host 'Launching interactive Copilot session...' -ForegroundColor Yellow

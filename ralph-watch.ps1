@@ -10,7 +10,7 @@ param(
 )
 
 $StudioName = "JellyBolt Games"
-$Owner = "tamirdresher"
+$Owner = "tdsquadai"
 $GameRepos = @(
     "brainrot-quiz-battle",
     "bounce-blitz",
@@ -20,7 +20,7 @@ $GameRepos = @(
 $StudioRepo = "jellybolt-games"
 $AllRepos = @($StudioRepo) + $GameRepos
 
-function gh-p { gh auth switch --user tamirdresher 2>$null | Out-Null; gh @args }
+function gh-p { gh auth switch --user tdsquadai 2>$null | Out-Null; gh @args }
 
 # ── Company Objectives ─────────────────────────────────────────────────────────
 # Strategic goals for JellyBolt. Ralph auto-creates issues for uncovered items.
