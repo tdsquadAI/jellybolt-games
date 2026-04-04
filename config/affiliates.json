@@ -24,7 +24,7 @@
     "notes": "No real publisher ID yet. Sign up at adsense.google.com to get a ca-pub-XXXXXXXXXXXXXXXX ID, then update this file and replace the ad slots in games/shared/ads.js."
   },
   "gumroad": {
-    "store_url": "https://tdsquad.gumroad.com",
+    "store_url": "https://squadai.gumroad.com",
     "products": ["jnmqpd", "nnefv", "qtmyl"],
     "status": "active"
   },

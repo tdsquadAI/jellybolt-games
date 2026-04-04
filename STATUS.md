@@ -9,7 +9,7 @@ Last updated: 2026-04-01
 - **itch.io:** jellyboltgames.itch.io
 - **YouTube:** https://www.youtube.com/channel/UC0roFVTTy1nSW9Zc7DgcsmQ (12 videos)
 - **Contact:** tdsquadai@gmail.com
-- **Gumroad:** tdsquad.gumroad.com (Game Bundle $4.99)
+- **Gumroad:** squadai.gumroad.com (Game Bundle $4.99)
 
 ## Games (45 total)
 All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
@@ -79,7 +79,7 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 | itch.io | jellyboltgames.itch.io | ✅ 16 games |
 | YouTube | UC0roFVTTy1nSW9Zc7DgcsmQ | ✅ 12 videos |
 | Google Play | JellyBolt Games Collection | ✅ Internal testing |
-| Gumroad | tdsquad.gumroad.com | ✅ Active |
+| Gumroad | squadai.gumroad.com | ✅ Active |
 
 ### Custom Domains (NOT WORKING — need registrar action)
 - techai-explained.dev — No DNS records
@@ -90,7 +90,7 @@ All games in `games/` — single HTML5 Canvas files (7-16 KB, instant load):
 
 ### Active
 - **itch.io:** jellyboltgames.itch.io — 16 games (8 more pending upload)
-- **Gumroad:** tdsquad.gumroad.com — Game Bundle $4.99 + courses
+- **Gumroad:** squadai.gumroad.com — Game Bundle $4.99 + courses
 - **Amazon Associates:** Tag `jellybolt-20` configured, gear section on landing page (pending account activation)
 
 ### Pending
